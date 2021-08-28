@@ -157,3 +157,33 @@ button:hover {
 .catalog section img {
     height: 150px;
 }
+
+@media only screen and (max-width: 768px) {
+    .right-block {
+        display: none;
+    }
+    .left-block {
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        height: 128px;
+        
+    }
+    
+    a {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    ul {
+        justify-content: space-around;
+        margin-right: 0px;
+        padding: 0px;
+        
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+}
