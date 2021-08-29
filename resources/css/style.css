@@ -210,6 +210,7 @@ button:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    border-radius: 16px;
 }
 
 .catalog section:hover {
