@@ -179,7 +179,7 @@ button:hover {
         
     }
     
-    a {
+    nav a {
         margin: 5px;
         padding: 5px;
     }
@@ -199,6 +199,10 @@ button:hover {
 @media only screen and (max-width: 390px) {
     .current-page {
         display: none;
+    }
+    
+    nav a {
+        margin: 1px;
     }
 }
 
