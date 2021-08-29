@@ -10,6 +10,9 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -200,7 +203,6 @@ button:hover {
     height: 850px;
 }
 
-
 .catalog_block {
     display: flex;
 }
@@ -210,15 +212,13 @@ button:hover {
 }
 
 .catalog section ul {
-    display: none;
     position: relative;
-    bottom: 800px;
     list-style-type: circle;
+    display: none;
 }
 
 .catalog section:hover ul {
     display: block;
-    bottom: 0;
 }
 
 
@@ -232,6 +232,8 @@ footer {
     justify-content: center;
     letter-spacing: 3px;
     border-top: 2px solid black;
+     /* Чтобы footer не уменьшался */
+    flex-shrink: 0;
 }
 
 footer a {
@@ -239,9 +241,10 @@ footer a {
     text-decoration: none;
 }
 
-
-
-
+main {
+    /* Чтобы занимал оставшееся пространство */
+    flex-grow: 1;
+  }
 
 /* mobile */
 
