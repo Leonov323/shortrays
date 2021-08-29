@@ -183,7 +183,7 @@ button:hover {
     background-color: white;
     font-size: 18px;
     box-shadow: -12px 23px 17px 2px #000000;
-    transition: all 1s linear .3s;
+    transition: all 1s linear 0s;
     position: relative;
     top: 0;
     bottom: 0;
@@ -217,7 +217,7 @@ button:hover {
     list-style-type: circle;
     visibility: hidden;
     display: block;
-    transition: all 1.2s linear .2s;
+    transition: all 1s linear 0s;
     opacity: 0;
     bottom: 500px;
     z-index: -1;
