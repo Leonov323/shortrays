@@ -45,7 +45,7 @@ ul {
     justify-content: space-around;
 }
 
-a {
+nav a {
     text-decoration: none;
     padding: 15px;
     color: black;
@@ -53,7 +53,7 @@ a {
     width: 100px;
   }
 
-  a:hover {
+nav  a:hover {
     background-color: black;
     color: white;
   }
@@ -220,4 +220,18 @@ button:hover {
     top: -10px;
     left: 10px;
     cursor: pointer;
+}
+
+footer {
+    background-color: rgb(84, 84, 84);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    border-top: 2px solid black;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
