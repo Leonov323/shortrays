@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+    
   }
 
 html {
@@ -131,6 +131,7 @@ button {
     text-transform: uppercase;
     line-height: 2em;
     font-family: 'Oswald', sans-serif;  
+    -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
@@ -189,6 +190,7 @@ button:focus{
     left: 0;
     right: 0;
     border-radius: 16px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .catalog section img {
