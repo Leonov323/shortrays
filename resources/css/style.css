@@ -141,6 +141,7 @@ button:hover {
 button:hover .textButtonNormal {
     display: none;
 }
+
 button .textButtonHover {
     display: none;
 }
@@ -148,7 +149,6 @@ button .textButtonHover {
 button:hover .textButtonHover {
     display: block;
     color: red;
-    opacity: 1;
 }
 
 
@@ -230,7 +230,6 @@ button:hover .textButtonHover {
 
 .catalog section:hover ul {
     bottom: 0;
-    
 }
 
 
