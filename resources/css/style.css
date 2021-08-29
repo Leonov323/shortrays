@@ -182,7 +182,7 @@ button:hover {
     background-color: white;
     font-size: 18px;
     box-shadow: -12px 23px 17px 2px #000000;
-    transition: all 550ms linear 0ms;
+    transition: all 1s linear 0ms;
     position: relative;
     top: 0;
     bottom: 0;
@@ -214,11 +214,17 @@ button:hover {
 .catalog section ul {
     position: relative;
     list-style-type: circle;
-    display: none;
+    visibility: hidden;
+    display: block;
+    transition: all .5s linear .5s;
+    opacity: 0;
+    bottom: 500px;
 }
 
 .catalog section:hover ul {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
 }
 
 
