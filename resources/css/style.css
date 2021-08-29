@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    
+    -webkit-tap-highlight-color: transparent;
   }
 
 html {
@@ -137,7 +137,6 @@ button {
 button:hover {
     color: white;
     animation: none;
-    opacity: 0.9;
 }
 
 button:hover .textButtonNormal {
