@@ -205,7 +205,7 @@ button:hover {
     box-shadow: -12px 23px 17px 2px #000000;
     transition: all 250ms linear 0ms;
     position: relative;
-    display: block;
+    display: flex;
     top: 0;
     bottom: 0;
     left: 0;
@@ -217,5 +217,5 @@ button:hover {
     box-shadow: -24px 33px 37px 2px #000000;
     top: -10px;
     left: 10px;
-    
+    cursor: pointer;
 }
