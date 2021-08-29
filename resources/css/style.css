@@ -175,7 +175,7 @@ button:hover {
 
 .catalog section {
     width: 315px;
-    height: 200px;
+    height: 215px;
     padding: 0px;
     margin: 20px;
     display: flex;
@@ -212,7 +212,7 @@ button:hover {
     background-color: white;
     margin-top: 0px;
     width: 100%;
-    border-radius: 18px;
+    border-radius: 18px 18px 0px 0px;
     padding: 20px;
 }
 
@@ -228,10 +228,12 @@ button:hover {
     bottom: 700px;
     transition: all 1s linear 0s;
     color: rgb(43, 42, 42);
+    visibility: hidden;
 }
 
 .catalog section:hover ul {
     bottom: 0;
+    visibility: visible;
 }
 
 
