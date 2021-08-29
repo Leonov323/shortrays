@@ -165,22 +165,21 @@ button:hover {
 .catalog {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     background-color: rgb(43, 42, 42);
     width: 100%;
-    padding: 50px;
+    padding: 10px;
     position: relative;
     z-index: 5;
+    align-items: flex-start;
 }
 
 .catalog section {
     width: 315px;
-    height: 215px;
+    height: 200px;
     padding: 0px;
-    margin: 20px;
+    margin: 50px 5px 50px 5px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
     background-color: white;
     font-size: 18px;
@@ -203,7 +202,7 @@ button:hover {
     top: -10px;
     left: 10px;
     cursor: pointer;
-    height: 750px;
+    height: 650px;
 }
 
 .catalog_block {
@@ -212,8 +211,9 @@ button:hover {
     background-color: white;
     margin-top: 0px;
     width: 100%;
-    border-radius: 18px 18px 0px 0px;
+    border-radius: 18px;
     padding: 20px;
+    justify-content: space-between;
 }
 
 .catalog section li {
@@ -228,8 +228,10 @@ button:hover {
     bottom: 700px;
     transition: all 1s linear 0s;
     color: rgb(43, 42, 42);
-    visibility: hidden;
+    margin: 25px;
 }
+
+
 
 .catalog section:hover ul {
     bottom: 0;
@@ -250,6 +252,8 @@ footer {
     border-top: 2px solid black;
      /* Чтобы footer не уменьшался */
     flex-shrink: 0;
+    position: relative;
+    z-index: 6;
 }
 
 footer a {
@@ -265,7 +269,7 @@ main {
 /* mobile */
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .right-block {
         display: none;
     }
@@ -293,6 +297,45 @@ main {
     .logo {
         margin-left: 0px;
     }
+    .catalog section:hover {
+        box-shadow: 0px 0px 0px 0px #000000;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+    }
+    .catalog section {
+        box-shadow: 0px 0px 0px 0px #000000;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+        height: 150px;
+        width: 90%;
+        border: none;
+    }
+    .catalog section ul{
+        right: 100%;
+    }
+
+    .catalog section:hover ul{
+        left: 0; 
+    }
+
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    } 
+    .catalog_block {
+        border-bottom: none;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 18px;
+    }
+    .catalog section:hover .catalog_block {
+        border-bottom: 1px solid black;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 18px 18px 0px 0px;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -304,3 +347,15 @@ main {
         margin: 1px;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .catalog section {
+        box-shadow: 0px 0px 0px 0px #000000;
+        
+    }
+    .catalog section:hover {
+        box-shadow: 0px 0px 0px 0px #000000;
+        
+    }
+}
+
