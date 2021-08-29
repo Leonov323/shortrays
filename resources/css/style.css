@@ -170,6 +170,7 @@ button .textButtonHover {
 button:hover .textButtonHover {
     display: block;
     color: red;
+    opacity: 1;
 }
 
 
