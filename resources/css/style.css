@@ -4,7 +4,6 @@
 
 html {
     font-family:  Arial, Helvetica, sans-serif;
-   
 }
 
 body {
@@ -80,8 +79,10 @@ nav  a:hover {
   .presentation {
     min-width: 100%;
     display: flex;
-    height: 600px;
+    height: 90vh;
     background-color: white;
+    position: relative;
+    z-index: 6;
   }
 
   .left-block {
@@ -127,8 +128,7 @@ button {
     letter-spacing: 15px;
     text-transform: uppercase;
     line-height: 2em;
-    font-family: 'Oswald', sans-serif;
-    
+    font-family: 'Oswald', sans-serif;  
 }
 
 
@@ -169,12 +169,14 @@ button:hover {
     background-color: rgb(43, 42, 42);
     width: 100%;
     padding: 50px;
+    position: relative;
+    z-index: 5;
 }
 
 .catalog section {
     width: 315px;
     height: 200px;
-    padding: 20px;
+    padding: 0px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -201,11 +203,17 @@ button:hover {
     top: -10px;
     left: 10px;
     cursor: pointer;
-    height: 850px;
+    height: 750px;
 }
 
 .catalog_block {
     display: flex;
+    z-index: 6;
+    background-color: white;
+    margin-top: 0px;
+    width: 100%;
+    border-radius: 18px;
+    padding: 20px;
 }
 
 .catalog section li {
@@ -215,19 +223,15 @@ button:hover {
 .catalog section ul {
     position: relative;
     list-style-type: circle;
-    visibility: hidden;
     display: block;
+    z-index: 4;
+    bottom: 700px;
     transition: all 1s linear 0s;
-    opacity: 0;
-    bottom: 500px;
-    z-index: -1;
+    color: rgb(43, 42, 42);
 }
 
 .catalog section:hover ul {
-    visibility: visible;
-    opacity: 1;
     bottom: 0;
-    z-index: 1;
 }
 
 
