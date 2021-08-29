@@ -152,6 +152,7 @@ button:hover {
 
 .catalog section {
     width: 315px;
+    height: 200px;
     padding: 20px;
     margin: 20px;
     display: flex;
