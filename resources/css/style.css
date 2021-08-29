@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
 
 html {
@@ -150,7 +151,9 @@ button:hover .textButtonHover {
     display: block;
     color: red;
 }
-
+button:focus{
+    outline:0;
+    }
 
 
 /* catalog */
