@@ -15,6 +15,14 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     border-radius: 4px;
 }
 
+h4 {
+    text-align: center;
+}
+
+.float {
+    float: right;
+}
+
 @media only screen and (max-width: 768px){
     .styled-input {
         width:100%;
