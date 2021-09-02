@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.pop-up {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    margin: 
+}
+
+form {
+    background-color: rgb(195, 195, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vh;
+    height: 70vh;
+}
+button {
+    margin: 20px;
+    width: 50%;
+    height: 10vh;
+}
