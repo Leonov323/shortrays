@@ -4,23 +4,52 @@ import './style.css';
 function Form() {
   return (
     <div>
-      <div className="col">
-        <h2>fill in the form!</h2>
+      <div className="col black-box">
         <div className="col">
-          <label></label>
-          <input type="text" className="form-control" placeholder="name" aria-label="name" />
+          <h2>Fill in the form!</h2>
         </div>
         <div className="col">
-          <label></label>
-          <input type="text" className="form-control" placeholder="Phone number" aria-label="Phone number" />
+          <label htmlFor="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            className="form-control black-border"
+            placeholder="John Travolta"
+            aria-label="name"
+          />
         </div>
         <div className="col">
-          <label></label>
-          <input type="text" className="form-control" placeholder="Adress" aria-label="Adress" />
+          <br />
+          <label htmlFor="phone=number">Phone number</label>
+          <input
+            id="phone-number"
+            type="text"
+            className="form-control black-border"
+            placeholder="+12345678910"
+            aria-label="Phone number"
+          />
         </div>
         <div className="col">
-          <label></label>
-          <input type="text" className="form-control" placeholder="Email (optional)" aria-label="Email" />
+          <br />
+          <label htmlFor="adress">Adress</label>
+          <input
+            id="adress"
+            type="text"
+            className="form-control black-border"
+            placeholder="P.O. Box 3560, Santa Barbara CA 93130, United States"
+            aria-label="Adress"
+          />
+        </div>
+        <div className="col">
+          <br />
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="text"
+            className="form-control black-border"
+            placeholder="fishsword@gmail.com"
+            aria-label="Email"
+          />
         </div>
         <div className="col-12">
           <br />
