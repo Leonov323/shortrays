@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Form from '../order-form';
 
 export const PopUpWrapper = (prop) => {
   const { closeCallback, display } = prop;
@@ -9,6 +10,7 @@ export const PopUpWrapper = (prop) => {
       <button className={'closePopUpButton'} onClick={() => closeCallback(false)}>
         X
       </button>
+      <Form />
     </div>
   );
 };

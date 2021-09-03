@@ -1,5 +1,5 @@
 import React from 'react';
-import './contacts.css';
+import './style.css';
 
 function Contacts() {
   return (
@@ -32,6 +32,7 @@ function Contacts() {
           </div>
           <div className="col-xs-12">
             <div className="styled-input wide">
+              <textarea type="text" required></textarea>
               <label>Message</label>
             </div>
           </div>

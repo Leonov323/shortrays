@@ -1,9 +1,9 @@
-import './App.css';
-import Arm from './img/arm-min3.png';
-import Button from './img/button.jpg';
-import Display from './img/display.jpg';
-import Pager from './img/pager.jpg';
-import { PopUpWrapper } from './components/pop-up';
+import './style.css';
+import Arm from '../../img/arm-min3.png';
+import Button from '../../img/button.jpg';
+import Display from '../../img/display.jpg';
+import Pager from '../../img/pager.jpg';
+import { PopUpWrapper } from '../pop-up';
 import React from 'react';
 
 class Home extends React.Component {
@@ -30,7 +30,7 @@ class Home extends React.Component {
                 <h1>The way to better your service</h1>
                 <p>Just put on the button to call a waiter, no more angry waiting clients.</p>
               </section>
-              <button onClick={() => this.orderClick(true)}>
+              <button className="order-button" onClick={() => this.orderClick(true)}>
                 <span className="textButtonNormal">Order now</span>
                 <span className="textButtonHover">You are awesome!</span>
               </button>

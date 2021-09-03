@@ -1,9 +1,9 @@
 import logo from './img/logo.png';
 import './App.css';
-import Home from './home';
-import Services from './services';
-import AboutUs from './about-us';
-import Contacts from './contacts';
+import Home from './components/home';
+import Services from './components/services';
+import AboutUs from './components/about-us';
+import Contacts from './components/contacts';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import React from 'react';
 
@@ -24,26 +24,26 @@ function App() {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/services">SERVICES</Link>
+                <Link to="/components/services">SERVICES</Link>
               </li>
               <li>
-                <Link to="/about-us">ABOUT-US</Link>
+                <Link to="/components/about-us">ABOUT-US</Link>
               </li>
               <li>
-                <Link to="/contacts">CONTACTS</Link>
+                <Link to="/components/contacts">CONTACTS</Link>
               </li>
             </ul>
           </nav>
         </header>
         <main>
           <Switch>
-            <Route path="/services">
+            <Route path="/components/services">
               <Services />
             </Route>
-            <Route path="/about-us">
+            <Route path="/components/about-us">
               <AboutUs />
             </Route>
-            <Route path="/contacts">
+            <Route path="/components/contacts">
               <Contacts />
             </Route>
             <Route path="/">

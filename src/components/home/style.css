@@ -34,7 +34,7 @@
     align-items: center;
   }
 
-button {
+.order-button {
     width: 90%;
     margin: 20px;
     padding: 10px;
@@ -52,24 +52,24 @@ button {
     -webkit-tap-highlight-color: transparent;
 }
 
-button:hover {
+.order-button:hover {
     color: white;
     animation: none;
 }
 
-button:hover .textButtonNormal {
+.order-button:hover .textButtonNormal {
     display: none;
 }
 
-button .textButtonHover {
+.order-button .textButtonHover {
     display: none;
 }
 
-button:hover .textButtonHover {
+.order-button:hover .textButtonHover {
     display: block;
     color: red;
 }
-button:focus{
+.order-button:focus{
     outline:0;
     }
 
@@ -91,7 +91,7 @@ button:focus{
 
 .catalog section {
     width: 315px;
-    height: 200px;
+    height: 230px;
     padding: 0px;
     margin: 50px 5px 50px 5px;
     display: flex;
@@ -119,7 +119,7 @@ button:focus{
     top: -10px;
     left: 10px;
     cursor: pointer;
-    height: 850px;
+    height: 950px;
 }
 
 .catalog_block {
@@ -154,3 +154,93 @@ button:focus{
     bottom: 0;
 }
 
+
+@keyframes animate
+
+{
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+      color: rgb(56, 56, 56);
+      box-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%,100%{
+      color: #fff;
+      box-shadow: 0 0 10px #03bcf4,
+      0 0 20px #03bcf4,
+      0 0 40px #03bcf4,
+      0 0 80px #03bcf4,
+      0 0 100px #03bcf4,
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .right-block {
+        display: none;
+    }
+    .left-block {
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        height: 128px;
+        
+    }
+    
+    nav a {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    ul {
+        justify-content: space-around;
+        margin-right: 0px;
+        padding: 0px;
+        
+    }
+  
+    .logo {
+        margin-left: 0px;
+    }
+   
+  }
+  
+  @media only screen and (max-width: 390px) {
+
+    nav a {
+        margin: 1px;
+    }
+  }
+  
+  @media only screen and (max-width: 1050px) {
+      
+    .catalog {
+        flex-wrap: wrap;
+    }
+    .catalog section {
+        box-shadow: 0px 0px 0px 0px #000000;
+        height: 760px;
+    }
+
+    .catalog section ul{
+        top: 0;
+
+    }
+
+    .catalog section:hover {
+        box-shadow: 0px 0px 0px 0px #000000;
+        height: 760px;
+    }
+  }
+  
+  @media only screen and (max-width: 359px) {
+    .catalog section:hover {
+        height: 760px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
