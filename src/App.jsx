@@ -52,9 +52,7 @@ function App() {
           </Switch>
         </main>
         <footer>
-          <h4>
-            <a href="#">info@shortrays.com</a>
-          </h4>
+          <h6>info@shortrays.com</h6>
         </footer>
       </div>
     </Router>

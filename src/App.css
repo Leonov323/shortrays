@@ -12,14 +12,8 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
-
-
-/* haeder */
-
 
 header {
   width: 100%;
@@ -40,15 +34,14 @@ header {
 }
 
 h2 span {
-  opacity: 0.7;
+  color: gray;
   border-bottom: 1px solid black;
 }
-
-/* nav */
 
 nav {
   width: 100%;
 }
+
 ul {
   display: flex;
   list-style-type: none;
@@ -64,14 +57,9 @@ nav a {
   width: 100px;
 }
 
-nav  a:hover {
+nav a:hover {
   background-color: black;
   color: white;
-}
-
-.current-page {
-    color: white;
-    background-color: black;
 }
 
 
@@ -81,26 +69,8 @@ footer {
   display: flex;
   justify-content: center;
   letter-spacing: 3px;
-  border-top: 2px solid black;
-   /* Чтобы footer не уменьшался */
-  flex-shrink: 0;
-  position: relative;
-  z-index: 6;
+  padding: 15px;
 }
-
-footer a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-main {
-  /* Чтобы занимал оставшееся пространство */
-  flex-grow: 1;
-}
-
-
-/* mobile */
-
 
 @media only screen and (max-width: 1000px) {
   .right-block {
@@ -112,19 +82,12 @@ main {
   header {
       flex-direction: column;
       height: 128px;
-      
-  }
-  
-  nav a {
-      margin: 5px;
-      padding: 5px;
   }
   
   ul {
       justify-content: space-around;
       margin-right: 0px;
       padding: 0px;
-      
   }
 
   .logo {
@@ -133,83 +96,20 @@ main {
  
 }
 
-@media only screen and (max-width: 390px) {
-  .current-page {
-      display: none;
+@media only screen and (max-width: 350px) {
+  nav a {
+      margin: 0px;
+      padding: 0px;
+      font-size: small;
   }
-  
+}
+
+@media only screen and (max-width: 400px) {
   nav a {
       margin: 1px;
+      padding: 5px;
   }
 }
-
-@media only screen and (max-width: 1200px) {
-  .catalog section {
-      box-shadow: 0px 0px 0px 0px #000000;
-  }
-  .catalog section:hover {
-      box-shadow: 0px 0px 0px 0px #000000;
-  }
-}
-
-@media only screen and (max-width: 359px) {
-  .catalog section:hover {
-      height: 750px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .catalog section:hover {
-      height: 770px;
-  }
-}
-@media only screen and (max-width: 344px) {
-  .catalog section:hover {
-      height: 780px;
-  }
-}
-@media only screen and (max-width: 342px) {
-  .catalog section:hover {
-      height: 845px;
-  }
-}
-@media only screen and (max-width: 322px) {
-  .catalog section:hover {
-      height: 860px;
-  }
-}
-
-@media only screen and (max-width: 301px) {
-  .catalog section:hover {
-      height: 870px;
-  }
-}
-
-@media only screen and (max-width: 295px) {
-  .catalog section:hover {
-      height: 900px;
-  }
-}
-
-@media only screen and (max-width: 283px) {
-  .catalog section:hover {
-      height: 955px;
-  }
-}
-
-@media only screen and (max-width: 310px) {
-  .catalog_block h3 {
-      display: none;
-  }
-  .catalog section {
-      margin-top: 50px;
-  }
-  .catalog_block {
-      justify-content: center;
-  }
-}
-
-
 
 
 

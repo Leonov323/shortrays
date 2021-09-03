@@ -20,12 +20,11 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home">
+      <div>
         <PopUpWrapper display={this.state.displayPopUp} closeCallback={this.orderClick} />
-
         <div className="presentation">
           <div className="left-block">
-            <div className="left-block_section">
+            <div>
               <section>
                 <h1>The way to better your service</h1>
                 <p>Just put on the button to call a waiter, no more angry waiting clients.</p>
@@ -43,7 +42,7 @@ class Home extends React.Component {
         <div className="catalog">
           <section>
             <div className="catalog_block">
-              <h3>CALL BUTTONS FOR WAITERS AND STAFF</h3>
+              <h4>CALL BUTTONS FOR WAITERS AND STAFF</h4>
               <img src={Button} alt="Button" />
             </div>
             <ul>
@@ -62,7 +61,7 @@ class Home extends React.Component {
           </section>
           <section>
             <div className="catalog_block">
-              <h3>CALL DISPLAY BOARD</h3>
+              <h4>CALL DISPLAY BOARD</h4>
               <img src={Display} alt="Display" />
             </div>
             <ul>
@@ -81,7 +80,7 @@ class Home extends React.Component {
           </section>
           <section>
             <div className="catalog_block">
-              <h3>PAGERS FOR WAITERS AND STAFF</h3>
+              <h4>PAGERS FOR WAITERS AND STAFF</h4>
               <img src={Pager} alt="Pagers" />
             </div>
             <ul>

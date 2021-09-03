@@ -3,35 +3,30 @@ import './style.css';
 
 function Form() {
   return (
-    <div className="order-form">
-      <div id="contacts">
-        <div className="container">
-          <div className="row2">
-            <h4>Fill in the form!</h4>
-          </div>
-          <div className="row input-container">
-            <div className="col-xs-12">
-              <div className="styled-input wide">
-                <input type="text" required />
-                <label>Name</label>
-              </div>
-            </div>
-            <div className="col-md-6 col-sm-12">
-              <div className="styled-input wide">
-                <input type="text" required />
-                <label>Phone number</label>
-              </div>
-            </div>
-            <div className="col-md-6 col-sm-12">
-              <div className="styled-input wide float">
-                <input type="text" required />
-                <label>Email</label>
-              </div>
-            </div>
-            <div className="col-xs-12">
-              <div className="btn-lrg submit-btn">Click me!</div>
-            </div>
-          </div>
+    <div>
+      <div className="col">
+        <h2>fill in the form!</h2>
+        <div className="col">
+          <label></label>
+          <input type="text" className="form-control" placeholder="name" aria-label="name" />
+        </div>
+        <div className="col">
+          <label></label>
+          <input type="text" className="form-control" placeholder="Phone number" aria-label="Phone number" />
+        </div>
+        <div className="col">
+          <label></label>
+          <input type="text" className="form-control" placeholder="Adress" aria-label="Adress" />
+        </div>
+        <div className="col">
+          <label></label>
+          <input type="text" className="form-control" placeholder="Email (optional)" aria-label="Email" />
+        </div>
+        <div className="col-12">
+          <br />
+          <button type="submit" className="btn btn-primary">
+            Click me!
+          </button>
         </div>
       </div>
     </div>
