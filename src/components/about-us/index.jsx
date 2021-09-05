@@ -1,11 +1,8 @@
 import React from 'react';
+import './style.css';
 
 function AboutUs() {
-  return (
-    <div id="about-us">
-      <p>WHAT ABOUT US?</p>
-    </div>
-  );
+  return <div className="about-us"></div>;
 }
 
 export default AboutUs;

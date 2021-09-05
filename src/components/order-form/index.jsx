@@ -4,7 +4,7 @@ import './style.css';
 function Form() {
   return (
     <div>
-      <div className="col black-box">
+      <div className="col white-box">
         <div className="col">
           <h2>Fill in the form!</h2>
         </div>
@@ -31,18 +31,18 @@ function Form() {
         </div>
         <div className="col">
           <br />
-          <label htmlFor="adress">Adress</label>
+          <label htmlFor="inputAdress">Name of the establishment</label>
           <input
-            id="adress"
+            id="inputAdress"
             type="text"
             className="form-control black-border"
-            placeholder="P.O. Box 3560, Santa Barbara CA 93130, United States"
+            placeholder="Hookah bar"
             aria-label="Adress"
           />
         </div>
         <div className="col">
           <br />
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email (Optional)</label>
           <input
             id="email"
             type="text"
