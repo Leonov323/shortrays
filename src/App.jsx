@@ -4,6 +4,7 @@ import Home from './components/home';
 import Services from './components/services';
 import AboutUs from './components/about-us';
 import Contacts from './components/contacts';
+import Login from './components/login';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import React from 'react';
 
@@ -26,11 +27,14 @@ function App() {
               <li>
                 <Link to="/components/services">SERVICES</Link>
               </li>
-              <li>
+              <li className="about-us-link">
                 <Link to="/components/about-us">ABOUT-US</Link>
               </li>
               <li>
                 <Link to="/components/contacts">CONTACTS</Link>
+              </li>
+              <li>
+                <Link to="/components/login">LOGIN</Link>
               </li>
             </ul>
           </nav>
@@ -45,6 +49,9 @@ function App() {
             </Route>
             <Route path="/components/contacts">
               <Contacts />
+            </Route>
+            <Route path="/components/login">
+              <Login />
             </Route>
             <Route path="/">
               <Home />

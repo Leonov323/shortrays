@@ -12,8 +12,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    text-align: center;
 }
+
+.link-to-login {
+    display: flex;
+    justify-content: center;
+}
+
 
 .right-block {
     width: 50%;

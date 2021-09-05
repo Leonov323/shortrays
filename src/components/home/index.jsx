@@ -31,12 +31,16 @@ class Home extends React.Component {
             <div>
               <section>
                 <h1>The way to better your service</h1>
-                <p>Just put on the button to call a waiter, no more angry waiting clients.</p>
+                <p>Just scan QR code to call a waiter, no more angry waiting clients.</p>
               </section>
               <button className="order-button" onClick={() => this.orderClick(true)}>
-                <span className="textButtonNormal">Order now</span>
+                <span className="textButtonNormal">Register now</span>
                 <span className="textButtonHover">You are awesome!</span>
               </button>
+              <span className="link-to-login">
+                <p>Already registred?</p>
+                <a href="../../components/login">Login.</a>
+              </span>
             </div>
           </div>
           <div className="right-block">
