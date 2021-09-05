@@ -1,33 +1,14 @@
 .contact-us {
-    min-height: 83vh;
-    padding: 10px;
-    max-width: 100vh;
+    min-height: 80vh;
+    padding: 15px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     text-align: center;
 }
 
-.contact-us section{
-   margin: 20px;
+.contact-us h2 {
+    font-size: 60px;
 }
-
-.contact-us section h1{
-    margin: 10px 0px 10px 0px;;
-    font-size: 64px;
- }
-
-.contact-us button{
-    width: 30%;
-    margin: 10px;
- }
- 
-
- @media only screen and (max-width: 400px) {
-
-    .contact-us section h1{
-        font-size: 54px;
-     }
-    
- }

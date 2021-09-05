@@ -5,7 +5,7 @@ function Contacts() {
   return (
     <div className="contact-us">
       <section>
-        <h1>contact us</h1>
+        <h2>contact us</h2>
         <p>We`d love to hear from you!</p>
       </section>
       <div className="row g-3">
@@ -14,6 +14,9 @@ function Contacts() {
         </div>
         <div className="col-md-6">
           <input type="text" className="form-control black-border" placeholder="Email" aria-label="Email" />
+        </div>
+        <div className="col-md-12">
+          <input type="text" className="form-control black-border" placeholder="Subject" aria-label="Subject" />
         </div>
         <div className="mb-3">
           <textarea
