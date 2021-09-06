@@ -31,26 +31,26 @@ function App() {
                 <Link to="/components/about-us">ABOUT-US</Link>
               </li>
               <li>
-                <Link to="/components/contacts">CONTACTS</Link>
+                <Link to="/contacts">CONTACTS</Link>
               </li>
               <li>
-                <Link to="/components/login">LOGIN</Link>
+                <Link to="/login">LOGIN</Link>
               </li>
             </ul>
           </nav>
         </header>
         <main>
           <Switch>
-            <Route path="/components/services">
+            <Route path="/services">
               <Services />
             </Route>
-            <Route path="/components/about-us">
+            <Route path="/about-us">
               <AboutUs />
             </Route>
-            <Route path="/components/contacts">
+            <Route path="/contacts">
               <Contacts />
             </Route>
-            <Route path="/components/login">
+            <Route path="/login">
               <Login />
             </Route>
             <Route path="/">
