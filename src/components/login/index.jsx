@@ -3,7 +3,7 @@ import React from 'react';
 function Login() {
   return (
     <div className="footer-to-bot container">
-      <form className="col-4 mx-auto pt-5">
+      <form className="col-md-3 mx-auto pt-5">
         <div className="mb-4 text-center">
           <h2>LOGIN</h2>
         </div>

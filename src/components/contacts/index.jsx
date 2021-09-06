@@ -3,7 +3,7 @@ import React from 'react';
 function Contacts() {
   return (
     <div className="footer-to-bot container">
-      <form className="col-5 mx-auto pt-5">
+      <form className="col-md-6  mx-auto pt-5">
         <section className="col text-center mb-3">
           <h2>CONTACT US</h2>
           <p>We`d love to hear from you!</p>
