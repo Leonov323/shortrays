@@ -35,57 +35,70 @@ class Form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log('form submitted and values is', this.state.email, this.state.password, this.state.repeatPassword);
+    return this.state.password != this.state.repeatPassword
+      ? console.log('wrong password')
+      : console.log('form submitted and values is', this.state.email, this.state.password, this.state.repeatPassword);
+    // if (this.state.password != this.state.repeatPassword) {
+    //   console.log('wrong password');
+    // } else {
+    //   console.log('form submitted and values is', this.state.email, this.state.password, this.state.repeatPassword);
+    // }
   }
 
   render() {
     return (
-      <div>
-        <form className="col white-box" onSubmit={this.handleSubmit}>
-          <div className="col">
+      <div className="container">
+        <form className="col white-box mx-auto" onSubmit={this.handleSubmit}>
+          <div className="mb-3">
             <h2>Fill in the form!</h2>
           </div>
-          <div className="col">
-            <br />
-            <label htmlFor="email">Email</label>
+          <div className="mb-3">
+            <label htmlFor="validationCustom01" className="form-label">
+              Email
+            </label>
             <input
               value={this.state.email}
               onChange={this.handleEmailChange}
-              id="email"
+              id="validationCustom01"
               type="text"
               className="form-control black-border"
               placeholder="example@gmail.com"
               aria-label="Email"
+              required
             />
+            <div className="valid-feedback">Looks good!</div>
           </div>
-          <div className="col">
-            <br />
-            <label htmlFor="password">Password</label>
+          <div className="mb-3">
+            <label htmlFor="validationCustom02" className="form-label">
+              Password
+            </label>
             <input
               value={this.state.password}
               onChange={this.handlePasswordChange}
-              id="password"
+              id="validationCustom02"
               type="text"
               className="form-control black-border"
               placeholder="*******"
               aria-label="Phone number"
+              required
             />
           </div>
-          <div className="col">
-            <br />
-            <label htmlFor="repeatPassword">Repeat assword</label>
+          <div className="mb-3">
+            <label htmlFor="validationCustom03" className="form-label">
+              Repeat assword
+            </label>
             <input
               value={this.state.repeatPassword}
               onChange={this.handleRepeatPasswordChange}
-              id="repeatPassword"
+              id="validationCustom03"
               type="text"
               className="form-control black-border"
               placeholder="*******"
               aria-label="Phone number"
+              required
             />
           </div>
-          <div className="col-12">
-            <br />
+          <div className="mt-4">
             <button type="submit" className="btn btn-primary">
               Register
             </button>

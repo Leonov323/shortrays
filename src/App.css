@@ -85,6 +85,10 @@ footer {
   height: 10vh;
 }
 
+.footer-to-bot {
+  min-height: 80vh;
+}
+
 @media only screen and (max-width: 1000px) {
   header {
       flex-direction: column;

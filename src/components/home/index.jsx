@@ -15,11 +15,12 @@ class Home extends React.Component {
       displayPopUp: display,
     });
 
-    if (display) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'visible';
-    }
+    return (document.body.style.overflow = display ? 'hidden' : 'visible');
+    // if (display) {
+    //   document.body.style.overflow = 'hidden';
+    // } else {
+    //   document.body.style.overflow = 'visible';
+    // }
   };
 
   render() {

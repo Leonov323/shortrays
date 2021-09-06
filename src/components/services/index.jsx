@@ -1,8 +1,7 @@
 import React from 'react';
-import './style.css';
 
 function Services() {
-  return <div className="services"></div>;
+  return <div className="footer-to-bot"></div>;
 }
 
 export default Services;
