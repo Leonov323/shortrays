@@ -76,7 +76,7 @@ class Form extends React.Component {
               value={this.state.password}
               onChange={this.handlePasswordChange}
               id="validationCustom02"
-              type="text"
+              type="password"
               className="form-control black-border"
               placeholder="*******"
               aria-label="Phone number"
@@ -91,7 +91,7 @@ class Form extends React.Component {
               value={this.state.repeatPassword}
               onChange={this.handleRepeatPasswordChange}
               id="validationCustom03"
-              type="text"
+              type="password"
               className="form-control black-border"
               placeholder="*******"
               aria-label="Phone number"

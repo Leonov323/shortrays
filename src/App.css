@@ -89,6 +89,10 @@ footer {
   min-height: 80vh;
 }
 
+.black-border {
+  border: 1px solid black;
+}
+
 @media only screen and (max-width: 1000px) {
   header {
       flex-direction: column;
