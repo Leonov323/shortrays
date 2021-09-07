@@ -2,7 +2,6 @@ import logo from './img/logo.png';
 import './App.css';
 import Home from './components/home';
 import Services from './components/services';
-import AboutUs from './components/about-us';
 import Contacts from './components/contacts';
 import Login from './components/login';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -27,9 +26,6 @@ function App() {
               <li>
                 <Link to="/services">SERVICES</Link>
               </li>
-              <li className="about-us-link">
-                <Link to="/about-us">ABOUT-US</Link>
-              </li>
               <li>
                 <Link to="/contacts">CONTACTS</Link>
               </li>
@@ -43,9 +39,6 @@ function App() {
           <Switch>
             <Route path="/services">
               <Services />
-            </Route>
-            <Route path="/about-us">
-              <AboutUs />
             </Route>
             <Route path="/contacts">
               <Contacts />
