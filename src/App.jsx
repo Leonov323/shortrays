@@ -25,10 +25,10 @@ function App() {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/components/services">SERVICES</Link>
+                <Link to="/services">SERVICES</Link>
               </li>
               <li className="about-us-link">
-                <Link to="/components/about-us">ABOUT-US</Link>
+                <Link to="/about-us">ABOUT-US</Link>
               </li>
               <li>
                 <Link to="/contacts">CONTACTS</Link>
