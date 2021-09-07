@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-class Form extends React.Component {
+class RegisterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,7 +48,7 @@ class Form extends React.Component {
   render() {
     return (
       <div className="container">
-        <form className="col white-box mx-auto" onSubmit={this.handleSubmit}>
+        <form className="col mx-auto" onSubmit={this.handleSubmit}>
           <div className="mb-3">
             <h2>Fill in the form!</h2>
           </div>
@@ -99,7 +99,7 @@ class Form extends React.Component {
             />
           </div>
           <div className="mt-4">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-dark">
               Register
             </button>
           </div>
@@ -110,4 +110,4 @@ class Form extends React.Component {
   }
 }
 
-export default Form;
+export default RegisterForm;

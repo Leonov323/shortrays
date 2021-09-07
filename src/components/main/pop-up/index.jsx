@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import Form from '../order-form';
+import RegisterForm from './register-form';
 
 export const PopUpWrapper = (prop) => {
   const { closeCallback, display } = prop;
@@ -9,7 +9,9 @@ export const PopUpWrapper = (prop) => {
       <button className={'closePopUpButton'} onClick={() => closeCallback(false)}>
         X
       </button>
-      <Form />
+      <div className="white-box ">
+        <RegisterForm />
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../../img/button.jpg';
-import Display from '../../img/display.jpg';
-import Pager from '../../img/pager.jpg';
+import Button from '../../../../img/button.jpg';
+import Display from '../../../../img/display.jpg';
+import Pager from '../../../../img/pager.jpg';
 import './style.css';
 
 function Catalog() {

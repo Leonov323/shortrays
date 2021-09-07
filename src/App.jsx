@@ -1,40 +1,17 @@
-import logo from './img/logo.png';
+import Header from './components/main/header';
 import './App.css';
-import Home from './components/home';
-import Services from './components/services';
-import Contacts from './components/contacts';
-import Login from './components/login';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './components/main/home';
+import Services from './components/main/services';
+import Contacts from './components/main/contacts';
+import Login from './components/main/login';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header>
-          <div className="logo">
-            <img className="logo" src={logo} alt="logo" />
-            <h2>
-              short<span>rays</span>
-            </h2>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">HOME</Link>
-              </li>
-              <li>
-                <Link to="/services">SERVICES</Link>
-              </li>
-              <li>
-                <Link to="/contacts">CONTACTS</Link>
-              </li>
-              <li>
-                <Link to="/login">LOGIN</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
         <main>
           <Switch>
             <Route path="/services">

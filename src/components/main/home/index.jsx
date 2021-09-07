@@ -1,7 +1,6 @@
 import './style.css';
-import Arm from '../../img/arm-min3.png';
 import { PopUpWrapper } from '../pop-up';
-import Catalog from '../catalog';
+import Catalog from './catalog';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -45,9 +44,7 @@ export default class Home extends React.Component {
               </span>
             </div>
           </div>
-          <div className="right-block">
-            <img className="arm" src={Arm} alt={'test'} />
-          </div>
+          <div className="right-block"></div>
         </div>
         <Catalog />
       </div>
