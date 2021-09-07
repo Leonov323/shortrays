@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "start:prod": "npm run build && node web_server",
+    "start:prod": "DISABLE_ESLINT_PLUGIN=true npm run build && node web_server",
     "format": "eslint --fix src/**/*.jsx && prettier --write src/**/*.jsx"
   },
   "eslintConfig": {
