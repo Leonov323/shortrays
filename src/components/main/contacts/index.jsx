@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../header';
 
 function Contacts() {
   return (
-    <div className="footer-to-bot container">
-      <form className="col-md-6  mx-auto pt-5">
+    <div className="footer-to-bot m-0">
+      <Header />
+      <form className="col-md-6  mx-auto p-3">
         <section className="col text-center mb-3">
           <h2>CONTACT US</h2>
           <p>We`d love to hear from you!</p>

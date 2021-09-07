@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from '../header';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <div className="footer-to-bot container">
-      <form className="col-md-3 mx-auto pt-5">
+    <div className="footer-to-bot m-0">
+      <Header />
+      <form className="col-md-3 mx-auto p-3">
         <div className="mb-4 text-center">
           <h2>LOGIN</h2>
         </div>
@@ -34,6 +37,7 @@ function Login() {
         <button type="submit" className="btn btn-dark">
           Submit
         </button>
+        <Link to="/admin">Admin</Link>
       </form>
     </div>
   );

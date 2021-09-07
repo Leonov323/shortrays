@@ -3,6 +3,7 @@ import { PopUpWrapper } from '../pop-up';
 import Catalog from './catalog';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../header';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -26,6 +27,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
+        <Header />
         <PopUpWrapper display={this.state.displayPopUp} closeCallback={this.orderClick} />
         <div className="presentation">
           <div className="left-block">

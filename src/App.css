@@ -40,6 +40,10 @@ footer {
 }
 
 .footer-to-bot {
+  min-height: 90vh;
+}
+
+.footer-to-bot-2 {
   min-height: 80vh;
 }
 
