@@ -3,21 +3,21 @@ import React from 'react';
 export default function LocationPage() {
   return (
     <div className="col h-100 overflow-auto">
-      <div className="col h-50 container overflow-auto">
+      <div className="col h-50 container border">
         <div className="row">
           <h2>My location 1</h2>
         </div>
-        <div className="col">
+        <div className="col container overflow-auto border">
           <ul>
-            <li>adress: Venezia street 21.</li>
-            <li>tables: table1, table2, table3, table4</li>
-            <li>Waiters: Mario</li>
+            <li>adress: Jopa street 21.</li>
+            <li>Number of tables: 16</li>
+            <li>Number of waiters: 6</li>
           </ul>
         </div>
       </div>
-      <div className="h-50 container d-flex flex-column justify-content-center">
-        <form className="col d-flex flex-wrap align-items-center">
-          <div className="col-lg-5 mx-auto mt-3 mb-3">
+      <div className="row h-50 mx-auto">
+        <form className="col-lg-6 border d-flex align-items-center">
+          <div className="col-9 mx-auto mt-3 mb-3">
             <div>
               <h2>Create new table</h2>
             </div>
@@ -35,7 +35,9 @@ export default function LocationPage() {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 mx-auto mt-3 mb-3">
+        </form>
+        <form className="col-lg-6 float-left border d-flex align-items-center">
+          <div className="col-9 mx-auto mt-3 mb-3">
             <div>
               <h2>Create new waiter</h2>
             </div>

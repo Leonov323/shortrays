@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function TablePage() {
   return (
-    <div className="col h-100 mh-55 overflow-auto">
-      <div className="col h-50 container overflow-auto border">
+    <div className="col h-100 overflow-auto">
+      <div className="col h-50 container border">
         <div className="row">
           <h2>Tables</h2>
         </div>
-        <div>
+        <div className="col h-75 container overflow-auto border">
           <ul>
             <li>Table 1</li>
             <li>Table 2</li>
@@ -28,20 +28,20 @@ export default function TablePage() {
           </ul>
         </div>
       </div>
-      <div className="h-50 container d-flex flex-column justify-content-center">
+      <div className="h-50 container border d-flex flex-column justify-content-center">
         <form>
           <div className="col-lg-5 mx-auto">
             <div>
               <h2>Create new table</h2>
             </div>
-            <div className="mb-2">
+            <div>
               <label htmlFor="NameOfNewLocation" className="form-label">
                 Name of new table
               </label>
               <input type="text" className="form-control black-border" id="NameOfNewLocation" required />
             </div>
             <div>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary mt-2">
                 Create
               </button>
             </div>

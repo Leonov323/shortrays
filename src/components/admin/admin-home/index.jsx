@@ -14,7 +14,7 @@ export default function AdminHome() {
         <AdminHeader />
         <div className="row">
           <AdminLeftNav />
-          <div className="col bg-white border footer-to-bot-2 p-0">
+          <div className="col bg-white border vh-85 p-0">
             <Switch>
               <Route path="/name-of-location">
                 <LocationPage />
