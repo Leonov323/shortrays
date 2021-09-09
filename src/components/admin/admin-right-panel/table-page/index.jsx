@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TablePage() {
   return (
-    <div className="col h-100 overflow-auto">
+    <div className="col h-100 mh-55 overflow-auto">
       <div className="col h-50 container overflow-auto border">
         <div className="row">
           <h2>Tables</h2>
