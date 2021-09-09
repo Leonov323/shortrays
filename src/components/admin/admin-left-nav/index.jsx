@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function AdminLeftNav() {
   return (
-    <div className="col-lg-3 bg-light">
+    <div className="col-md-3 bg-light">
       <NavLink to="/create-new-location">
         <button type="button" className="btn btn-dark w-100">
           Locations

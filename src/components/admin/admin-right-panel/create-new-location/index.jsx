@@ -38,7 +38,7 @@ export default function CreateNewLocation() {
               <input type="text" className="form-control black-border" id="Adress" required />
             </div>
             <div>
-              <button type="submit" className="btn btn-primary mt-2">
+              <button type="submit" className="btn btn-dark mt-2">
                 Create
               </button>
             </div>
