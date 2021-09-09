@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../../../img/logo.png';
 import { Link } from 'react-router-dom';
-import './style.css';
 
 export default function AdminHeader() {
   return (
@@ -18,7 +17,7 @@ export default function AdminHeader() {
             <Link to="/admin">HOME</Link>
           </li>
           <li>
-            <Link to="/admin-services">SERVICES</Link>
+            <Link to="/admin-profile">PROFILE</Link>
           </li>
           <li>
             <Link to="/admin-contacts">CONTACTS</Link>

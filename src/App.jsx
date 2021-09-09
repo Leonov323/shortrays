@@ -5,6 +5,7 @@ import Services from './components/main/services';
 import Contacts from './components/main/contacts';
 import Login from './components/main/login';
 import AdminHome from './components/admin/admin-home';
+import Footer from './components/main/footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -28,9 +29,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <footer>
-          <h6>info@shortrays.com</h6>
-        </footer>
+        <Footer />
       </div>
     </Router>
   );

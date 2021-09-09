@@ -1,39 +1,31 @@
 import React from 'react';
 import AdminHeader from '../admin-header';
-import CreateNewLocation from '../create-new-location';
+import CreateNewLocation from '../admin-right-panel/create-new-location';
+import LocationPage from '../admin-right-panel/create-new-location/location-page';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AdminLeftNav from '../admin-left-nav/index.jsx';
+import TablePage from '../admin-right-panel/table-page';
+import TableDescription from '../admin-right-panel/table-page/table-description';
 
 export default function AdminHome() {
   return (
     <Router>
-      <div className="footer-to-bot m-0 bg-dark">
+      <div className="footer-to-bot container-fluid">
         <AdminHeader />
         <div className="row">
-          <div className="col-3 bg-light footer-to-bot-2 p-0">
-            <div className="btn-group dropend w-100">
-              <button type="button" className="btn btn-outline-dark w-75">
-                Location
-              </button>
-              <button
-                type="button"
-                className="btn btn-dark dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span className="visually-hidden">Toggle Dropright</span>
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    + Create new location
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <AdminLeftNav />
           <div className="col bg-white border footer-to-bot-2 p-0">
             <Switch>
-              <Route path="/create-new-location">
+              <Route path="/name-of-location">
+                <LocationPage />
+              </Route>
+              <Route path="/table-page">
+                <TablePage />
+              </Route>
+              <Route path="/table-description">
+                <TableDescription />
+              </Route>
+              <Route path="/">
                 <CreateNewLocation />
               </Route>
             </Switch>

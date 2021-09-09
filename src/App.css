@@ -29,22 +29,28 @@ h2 span {
   border-bottom: 1px solid black;
 }
 
-footer {
+.mh-55 {
+  max-height: 75vh;
+}
+
+footer{
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   letter-spacing: 3px;
-  height: 10vh;
+  height: 5vh;
+  text-align: center;
 }
 
 .footer-to-bot {
-  min-height: 90vh;
+  min-height: 95vh;
 }
 
 .footer-to-bot-2 {
-  min-height: 80vh;
+  min-height: 85vh;
+}
+
+.vh-50 {
+  min-height: 50vh;
 }
 
 .black-border {
