@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AdminLeftNav from '../admin-left-nav/index.jsx';
 import TablePage from '../admin-right-panel/table-page';
 import TableDescription from '../admin-right-panel/table-page/table-description';
+import WaiterPage from '../admin-right-panel/waiter-page';
+import WaiterDescription from '../admin-right-panel/waiter-page/waiter-description';
 
 export default function AdminHome() {
   return (
@@ -24,6 +26,12 @@ export default function AdminHome() {
               </Route>
               <Route path="/table-description">
                 <TableDescription />
+              </Route>
+              <Route path="/waiter-page">
+                <WaiterPage />
+              </Route>
+              <Route path="/waiter-description">
+                <WaiterDescription />
               </Route>
               <Route path="/">
                 <CreateNewLocation />

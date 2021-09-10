@@ -35,10 +35,10 @@ export default function TablePage() {
               <h2>Create new table</h2>
             </div>
             <div>
-              <label htmlFor="NameOfNewLocation" className="form-label">
+              <label htmlFor="NameOfNewTable" className="form-label">
                 Name of new table
               </label>
-              <input type="text" className="form-control black-border" id="NameOfNewLocation" required />
+              <input type="text" className="form-control black-border" id="NameOfNewTable" required />
             </div>
             <div>
               <button type="submit" className="btn btn-dark mt-2">

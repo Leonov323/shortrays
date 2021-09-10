@@ -101,15 +101,16 @@ export default function AdminLeftNav() {
         <button type="button" className="btn-sm btn-outline-dark w-50 m-1">
           Table 16
         </button>
-
-        <button type="button" className="btn-sm btn-secondary w-75 m-1">
-          Waiters
-        </button>
-
-        <button type="button" className="btn-sm btn-outline-dark w-50 m-1">
-          Mario
-        </button>
-
+        <NavLink to="/waiter-page">
+          <button type="button" className="btn-sm btn-secondary w-75 m-1">
+            Waiters
+          </button>
+        </NavLink>
+        <NavLink to="/waiter-description">
+          <button type="button" className="btn-sm btn-outline-dark w-50 m-1">
+            Mario
+          </button>
+        </NavLink>
         <button type="button" className="btn-sm btn-outline-dark w-50 m-1">
           Giacomo
         </button>

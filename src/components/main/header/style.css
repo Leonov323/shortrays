@@ -4,6 +4,8 @@ header {
     display: flex;
     background-color: rgb(255, 255, 255);
     align-items: center;
+    position: relative;
+    z-index: 9;
 }
 
 .logo {
