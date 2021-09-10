@@ -8,6 +8,8 @@ import TablePage from '../admin-right-panel/table-page';
 import TableDescription from '../admin-right-panel/table-page/table-description';
 import WaiterPage from '../admin-right-panel/waiter-page';
 import WaiterDescription from '../admin-right-panel/waiter-page/waiter-description';
+import AdminProfile from '../admin-profile';
+import AdminContacts from '../admin-contacts';
 
 export default function AdminHome() {
   return (
@@ -32,6 +34,12 @@ export default function AdminHome() {
               </Route>
               <Route path="/waiter-description">
                 <WaiterDescription />
+              </Route>
+              <Route path="/admin-profile">
+                <AdminProfile />
+              </Route>
+              <Route path="/admin-contacts">
+                <AdminContacts />
               </Route>
               <Route path="/">
                 <CreateNewLocation />

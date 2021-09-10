@@ -46,7 +46,7 @@ footer{
 }
 
 .max-vh-75 {
-  height: 75vh;
+  max-height: 75vh;
 }
 
 
@@ -65,3 +65,12 @@ footer{
 .overflow-x-hide {
   overflow-x: hidden !important;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  .vh-75 {
+      max-height: 1000vh;
+  }
+
+}   

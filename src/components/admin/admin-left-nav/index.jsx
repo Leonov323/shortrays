@@ -1,15 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './style.css';
 
 export default function AdminLeftNav() {
   return (
-    <div className="col-md-3 bg-light">
+    <div className="col-md-3 bg-light left-nav">
       <NavLink to="/create-new-location">
         <button type="button" className="btn btn-dark w-100">
           Locations
         </button>
       </NavLink>
-      <div className="max-vh-75 overflow-auto overflow-x-hide container border">
+      <div className="max-vh-75 overflow-auto left-nav-scroll overflow-x-hide container border">
         <NavLink to="/name-of-location">
           <button type="button" className="btn-sm btn-secondary w-100 m-1">
             My location 1
