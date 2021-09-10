@@ -6,7 +6,7 @@ import './style.css';
 function Header() {
   return (
     <header>
-      <div className="logo">
+      <div className="logo container-fluid">
         <img className="logo" src={logo} alt="logo" />
         <h2>
           short<span>rays</span>
