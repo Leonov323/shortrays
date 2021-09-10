@@ -7,9 +7,9 @@ export default function LocationPage() {
         <div className="row">
           <h2>My location 1</h2>
         </div>
-        <div className="col container overflow-auto border">
+        <div className="col h-75 container overflow-auto border">
           <ul>
-            <li>adress: Jopa street 21.</li>
+            <li>adress: Jopa street 11.</li>
             <li>Number of tables: 16</li>
             <li>Number of waiters: 6</li>
           </ul>
