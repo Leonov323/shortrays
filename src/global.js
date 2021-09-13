@@ -12,6 +12,6 @@ export const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
     width: 100vw;
     overflow-x: hidden !important;
-    background: gray;
+    background: #f8f9fA
   }
   `;
