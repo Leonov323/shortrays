@@ -17,14 +17,10 @@ export const Styled = styled.div`
           z-index: -1;
           bottom: 0; 
           right: 0; 
-          width: 50%;
-          height: 80%;
+          width: 90vh;
           display: flex;          
-          @media screen and (max-width: 993px) {
-            display: none;
-          }
-          @media screen and (max-width: 1100px) {
-            height: 60%;
+          @media screen and (max-width: 992px) {
+            width: 40vh;
           }
         
     `;

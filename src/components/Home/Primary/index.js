@@ -1,12 +1,12 @@
-import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image, } from 'react-bootstrap';
 import { Styled, Background } from './Primary.styled';
 import Arm from '../../../img/arm-min3.png';
 import OrderButton from './Button';
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 
 function Primary() {
-    const [modalShow, setModalShow] = React.useState(false);
+    const [setModalShow] = React.useState(false);
     return (
         <Styled>
             <Container>
@@ -23,10 +23,11 @@ function Primary() {
                         </span>
                     </Col>
                     <Col md={6}>
-                        <Background><Image src={Arm} width="100%" /></Background>
+                        
                     </Col>
                 </Row>
             </Container>
+            <Background><Image src={Arm} width="100%" /></Background>
         </Styled>
     );
 }

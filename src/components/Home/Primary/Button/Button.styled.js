@@ -15,16 +15,19 @@ export const Styled = styled.div`
     .order-button {
     padding: 20px 45px;
     margin-top: 20px;
-    width: 100%;
+    width: 400px;
     cursor: pointer;
-    border-radius: 36px;
+    border-radius: 4px;
     background-color: black;
-    color: white;
     animation: 5s ${fadeIn} linear infinite;
     font-size: larger;
     letter-spacing: 10px;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;}
+    font-family: 'Oswald', sans-serif;
+    @media screen and (max-width: 380px) {
+            letter-spacing: 5px;
+            width: 100%;
+          }}
     .order-button:hover .textButtonNormal {
     display: none;
     }
@@ -34,6 +37,8 @@ export const Styled = styled.div`
     .order-button:hover .textButtonHover {
     display: block;
     color: red;
+    letter-spacing: 5px;
     }
+  
     `;
 

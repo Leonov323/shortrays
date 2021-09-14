@@ -6,7 +6,11 @@ function Contacts() {
     return (
         <Styled>
             <Container>
-                <Col md={6} className="mx-auto pt-5">
+                <Col md={6} className="mx-auto">
+                    <section className="text-center mb-4">
+                        <h2 className="display-4"><strong>CONTACT US</strong></h2>
+                        <p className="lead">We`d love to hear from you!</p>
+                    </section>
                     <Form>
                         <Form.Group className="mb-3" controlId="Form.ControlInput1">
                             <Form.Label>Email address</Form.Label>

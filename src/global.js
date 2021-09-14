@@ -13,10 +13,11 @@ export const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
     width: 100vw;
     overflow-x: hidden !important;
-    background: #f8f9fA
+    background: #f8f9fA;
   }
 
   img, button {
   user-select: none;
-}
+} 
+  nav a 
   `;

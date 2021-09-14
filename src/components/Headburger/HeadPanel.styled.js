@@ -15,8 +15,6 @@ export const HeadPanelStyled = styled.div`
             width: 100%;
         }
        
-
-
         .mobile {
             display: none;
         }
@@ -25,25 +23,6 @@ export const HeadPanelStyled = styled.div`
         .mobile {
             display: fixed;
         }
-`
-
-export const LogoStyle = styled.div`
-    transition: opacity .2s linear;
-    
-    span {
-            color: #b3b3b3;
-            border-bottom: 1px solid gray;
-        }
-        h2{
-            color: white;
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-
-    a {
-        text-decoration: none;
-    }
 `
 
 export const HeaderSpace = styled.div`
