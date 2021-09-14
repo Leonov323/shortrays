@@ -14,6 +14,7 @@ export const HeadPanelStyled = styled.div`
         a {
             width: 100%;
         }
+       
 
 
         .mobile {
@@ -26,16 +27,20 @@ export const HeadPanelStyled = styled.div`
         }
 `
 
-export const OpacityHover = styled.div`
+export const LogoStyle = styled.div`
     transition: opacity .2s linear;
     
     span {
             color: #b3b3b3;
             border-bottom: 1px solid gray;
         }
-    &:hover {
-        opacity: 0.7;
-    }
+        h2{
+            color: white;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
     a {
         text-decoration: none;
     }

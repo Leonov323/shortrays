@@ -1,6 +1,6 @@
-import { HeadPanelStyled, OpacityHover, HeaderSpace } from "./HeadPanel.styled";
+import { HeadPanelStyled, LogoStyle, HeaderSpace } from "./HeadPanel.styled";
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import Logo from '../../img/logo3.png';
+import Logo from '../../img/icon.png';
 import React, { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
@@ -19,20 +19,18 @@ function Headburger() {
             <HeaderSpace />
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
                 <Container fluid className="bg-dark">
-                    <OpacityHover>
+                    <LogoStyle>
                         <Link onClick={headerRedirect('/home')} to="/">
-                            <Navbar.Brand>
-                                <img src={Logo} height="40" alt="burger" />
+                            <Link className="d-flex" to="/home">
+                                <img src={Logo} height="40" alt="burger" className="p-2"/>
                                 {' '}
-                                SHORT<span>RAYS</span>
-                            </Navbar.Brand>
+                                <h2>SHORT<span>RAYS</span></h2>
+                            </Link>
                         </Link>
-                    </OpacityHover>
-                    <OpacityHover>
+                    </LogoStyle>
                         <Nav.Item>
                             <Hamburger label="Show menu" color="#F0FFFF" toggled={isOpen} toggle={setOpen} hideOutline={false} />
                         </Nav.Item>
-                    </OpacityHover>
                 </Container>
                 <HeadPanelStyled isOpen={isOpen}>
                     <Container className="col">
