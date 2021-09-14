@@ -20,7 +20,7 @@ export const Styled = styled.div`
           width: 90vh;
           display: flex;          
           @media screen and (max-width: 992px) {
-            width: 40vh;
+            width: 50vh;
           }
         
     `;
