@@ -9,7 +9,7 @@ function Primary() {
         <Styled>
             <Container>
                 <Row>
-                    <Col lg={6} className="vh-100 d-flex flex-column align-items-center justify-content-center pt-5">
+                    <Col lg={6} className="p-1 vh-100 d-flex flex-column align-items-center justify-content-center pt-5">
                         <section className="text-center">
                             <h1>The way to better your service</h1>
                             <p>Just scan QR code to call a waiter, no more angry waiting clients.</p>

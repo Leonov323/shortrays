@@ -4,10 +4,10 @@ import { Styled } from './Primary.styled'
 function OrderButton() {
     return (
         <Styled>
-            <Button className="order-button">
+            <button className="order-button">
                 <span className="textButtonNormal">Register now</span>
                 <span className="textButtonHover">You are awesome!</span>
-            </Button>
+            </button>
         </Styled>
     );
 }
