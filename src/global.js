@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   *, *::after, *::before {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
   body {
     text-rendering: optimizeLegibility;
@@ -14,4 +15,8 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden !important;
     background: #f8f9fA
   }
+
+  img, button {
+  user-select: none;
+}
   `;

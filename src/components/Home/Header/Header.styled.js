@@ -9,7 +9,7 @@ export const Styled = styled.nav`
         color: black;
         text-transform: uppercase;
         };
-    
+        
     h2 span {
         color: gray;
         border-bottom: 1px solid gray;

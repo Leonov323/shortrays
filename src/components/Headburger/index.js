@@ -1,6 +1,6 @@
 import { HeadPanelStyled, OpacityHover, HeaderSpace } from "./HeadPanel.styled";
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import Logo from '../../img/logo.png';
+import Logo from '../../img/logo3.png';
 import React, { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';

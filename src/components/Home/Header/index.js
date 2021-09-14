@@ -1,5 +1,5 @@
 import { Navbar, Image, Container, Nav } from 'react-bootstrap';
-import Logo from '../../../img/logo.png';
+import Logo from '../../../img/logo3.png';
 import { NavLink } from 'react-router-dom';
 import { Styled } from './Header.styled'
 import Headburger from '../../Headburger'
@@ -12,7 +12,7 @@ function Header() {
             <Navbar bg="light" variant="light" className="desctop">
                 <Container fluid>
                             <NavLink className="d-flex" to="/home">
-                                <Image height="70" src={Logo} alt="QR code" />
+                                <Image height="50" src={Logo} alt="QR code" />
                                 {' '}<h2 className="d-flex align-items-center">Short<span>rays</span></h2>
                             </NavLink>
                             <Nav justify className="w-100">

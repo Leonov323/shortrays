@@ -1,7 +1,7 @@
 import React from "react";
 import { GlobalStyles } from './global';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import { Header, Primary } from './components'
+import { Header, Primary, Contacts } from './components'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -10,10 +10,10 @@ function App() {
       <GlobalStyles />
       <Header />
       <Switch>
-        <Route path="/about">
-
+        <Route path="/contact-us">
+          <Contacts />
         </Route>
-        <Route path="/users">
+        <Route path="/Service">
 
         </Route>
         <Route path="/home">

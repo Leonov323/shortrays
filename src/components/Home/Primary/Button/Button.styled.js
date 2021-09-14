@@ -22,7 +22,7 @@ export const Styled = styled.div`
     color: white;
     animation: 5s ${fadeIn} linear infinite;
     font-size: larger;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;}
     .order-button:hover .textButtonNormal {
