@@ -17,7 +17,7 @@ function Headburger() {
         <Container className="mobile">
             <HeaderSpace />
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
-                <Container fluid className="bg-dark">
+                <Container fluid className="bg-dark h70">
                     <Link className="d-flex" onClick={headerRedirect('/home')} to="/home">
                         <img src={Logo} height="40" alt="burger" className="p-2" />
                         {' '}

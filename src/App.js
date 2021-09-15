@@ -1,7 +1,7 @@
 import React from "react";
 import { GlobalStyles } from './global';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import { Header, Primary, Contacts, Service } from './components'
+import { Header, Primary, Contacts, Service, SignIn } from './components'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -13,8 +13,11 @@ function App() {
         <Route path="/contact-us">
           <Contacts />
         </Route>
-        <Route path="/Service">
+        <Route path="/service">
           <Service />
+        </Route>
+        <Route path="/sign-in">
+          <SignIn />
         </Route>
         <Route path="/home">
           <Primary />

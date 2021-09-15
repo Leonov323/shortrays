@@ -5,10 +5,9 @@ import React from 'react';
 function Service() {
     return (
         <Styled>
-        <Container>
-            
-        </Container>
-            
+            <Container>
+
+            </Container>
         </Styled>
     );
 }
