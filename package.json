@@ -1,6 +1,6 @@
 {
   "name": "shortrays-on-bootstrap",
-  "version": "14.17.6",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -44,5 +44,10 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "engines": { 
+    "node": "version "
+    
   }
+  
 }
