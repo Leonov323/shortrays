@@ -18,7 +18,7 @@ function Headburger() {
             <HeaderSpace />
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
                 <Container fluid className="bg-dark h70">
-                    <Link className="d-flex" onClick={headerRedirect('/home')} to="/home">
+                    <Link className="d-flex" onClick={headerRedirect('./')} to="./">
                         <img src={Logo} height="40" alt="burger" className="p-2" />
                         {' '}
                         <h2>SHORT<span>RAYS</span></h2>

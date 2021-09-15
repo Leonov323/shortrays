@@ -11,13 +11,13 @@ function Header() {
             <Headburger/>
             <Navbar bg="light" variant="light" className="desctop">
                 <Container fluid>
-                            <NavLink className="d-flex" to="/home">
+                            <NavLink className="d-flex" to="./">
                                 <Image height="50" src={Logo} alt="QR code" />
                                 {' '}<h2 className="d-flex align-items-center">Short<span>rays</span></h2>
                             </NavLink>
                             <Nav justify className="w-100">
                                 <Nav.Item>
-                                    <NavLink to="/home" activeStyle={active}>Home</NavLink>
+                                    <NavLink to="./" activeStyle={active}>Home</NavLink>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <NavLink to="/service" activeStyle={active}>Service</NavLink>

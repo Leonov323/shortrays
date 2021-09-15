@@ -21,7 +21,7 @@ function Primary() {
                             <OrderButton onClick={() => setModalShow(true)} />
                             <span className="link-to-login d-flex mt-3">
                                 <p>Already registred?</p>
-                                <Link to={`/sign-in`}>Sign in</Link>
+                                <Link to={`./sign-in`}>Sign in</Link>
                             </span>
                         </Col>
                     </Row>
