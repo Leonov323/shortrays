@@ -7,7 +7,6 @@ export const Styled = styled.div`
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     padding-bottom: 20px;
 
      }
      .hidde-on-primary {
@@ -24,7 +23,7 @@ export const Styled = styled.div`
 
    export const Background = styled.div`
           position: absolute;
-          z-index: -1;
+          z-index: -2;
           bottom: 0; 
           right: 0; 
           width: 90vh;

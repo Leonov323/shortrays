@@ -11,7 +11,7 @@ function Primary() {
     return (
         <Styled>
             <Container>
-                <Col className="d-flex flex-column">
+                <Col>
                     <Row className="min-100-71">
                         <Col xl={6} className="d-flex flex-column align-items-center justify-content-center">
                             <section className="text-center">
