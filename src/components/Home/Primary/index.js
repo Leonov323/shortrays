@@ -13,7 +13,7 @@ function Primary() {
             <Container>
                 <Col>
                     <Row className="min-100-71">
-                        <Col xl={6} className="d-flex flex-column align-items-center justify-content-center">
+                        <Col xl={6} className="pb-5 d-flex flex-column align-items-center justify-content-center">
                             <section className="text-center">
                                 <h1>The way to better your service</h1>
                                 <p>Just scan QR code to call a waiter, no more angry waiting clients.</p>
