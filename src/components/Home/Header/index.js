@@ -2,7 +2,7 @@ import { Navbar, Image, Container, Nav } from 'react-bootstrap';
 import Logo from '../../../img/logo3.png';
 import { NavLink } from 'react-router-dom';
 import { Styled } from './Header.styled'
-import Headburger from '../../Headburger'
+import Headburger from './Headburger'
 
 const active = { background: 'black', color: 'white' }
 function Header() {
