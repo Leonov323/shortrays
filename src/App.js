@@ -23,10 +23,10 @@ function App() {
           <Route path="/">
             <Primary />
           </Route>
-          
         </Switch>
-        <Footer />
+       
       </Router>
+      <Footer />
     </>
   );
 }

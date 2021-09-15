@@ -24,7 +24,7 @@ export const Styled = styled.div`
     letter-spacing: 10px;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 405px) {
             letter-spacing: 5px;
             width: 100%;
           }}
