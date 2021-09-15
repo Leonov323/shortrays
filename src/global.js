@@ -25,6 +25,8 @@ export const GlobalStyles = createGlobalStyle`
   nav {
     font-family: 'Azeret Mono', monospace;
   }
-
+  .min-100-71 {
+      min-height: calc(100vh - 71px);
+     }
 
   `;

@@ -1,9 +1,7 @@
 import styled from "styled-components"
 
 export const Styled = styled.div`
-     top: 0;
      width: 100vw;
-     min-height: calc(100vh - 70px);
      z-index: -1;
      display: flex;
      flex-direction: column;
@@ -12,8 +10,9 @@ export const Styled = styled.div`
      .hidde-on-primary {
        display: none;
      }
+
      @media screen and (max-width: 1199.9px) {
-      padding: 50px 0px;
+      
       .hidde-on-primary {
        display: block;
      }

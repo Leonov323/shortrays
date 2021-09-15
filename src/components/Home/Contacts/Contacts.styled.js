@@ -1,11 +1,9 @@
 import styled from "styled-components"
 
 export const Styled = styled.div`
-     z-index: -1;
+     min-height: calc(100vh - 71px);
      display: flex;
-     fllx-direction: column;
-     justify-content: center;
+     flex-direction: column;
      align-items: center;
-     padding: 0px 0px 50px 0px;
-     margin-top: 50px;
+     justify-content: center;
     `;

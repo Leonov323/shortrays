@@ -12,8 +12,8 @@ function Primary() {
         <Styled>
             <Container>
                 <Col className="d-flex flex-column">
-                    <Row>
-                        <Col xl={6} className="p-0 mb-5 mt-5 d-flex flex-column align-items-center justify-content-center">
+                    <Row className="min-100-71">
+                        <Col xl={6} className="p-0 d-flex flex-column align-items-center justify-content-center">
                             <section className="text-center">
                                 <h1>The way to better your service</h1>
                                 <p>Just scan QR code to call a waiter, no more angry waiting clients.</p>
@@ -26,7 +26,7 @@ function Primary() {
                         </Col>
                     </Row>
                     <Row className="hidde-on-primary">
-                        <Col xl={6} className="p-0 d-flex flex-column">
+                        <Col xl={6} className="p-0">
                             <Contacts />
                         </Col>
                     </Row>

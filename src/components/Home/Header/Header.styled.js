@@ -4,8 +4,10 @@ export const Styled = styled.nav`
      ${props =>
     props.primary &&
     css`
-    height: 70px;
     border-bottom: 1px solid #D9E7F0;
+     nav {
+        height: 70px;
+     }
     a {
         text-decoration: none;
         color: black;
@@ -43,7 +45,7 @@ export const Styled = styled.nav`
             display: none;
         }
         .mobile {
-            display: fixed;
+            display: block;
         }
         a h2 {
             color: white;

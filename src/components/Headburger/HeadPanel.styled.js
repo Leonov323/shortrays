@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const HeadPanelStyled = styled.div`
         position: fixed;
-        z-index: -1;
         height: 100vh;
+        z-index: -1;
         width: 100vw;
         background: #292b2c;
         left: 0;
@@ -25,12 +25,12 @@ export const HeadPanelStyled = styled.div`
 
     @media screen and (min-width: 700px) {
         .mobile {
-            display: fixed;
+            display: block;
         }
 `
 
 export const HeaderSpace = styled.div`
-    height: 48px;
+    height: 70px;
     width: 100%;
     background: #292b2c;;
     
