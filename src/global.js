@@ -1,9 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 export const GlobalStyles = createGlobalStyle`
+  
   html, body {
     margin: 0;
     padding: 0;  
+    font-family: 'Lato', sans-serif;
   }
   *, *::after, *::before {
     box-sizing: border-box;
@@ -16,8 +19,12 @@ export const GlobalStyles = createGlobalStyle`
     background: #f8f9fA;
   }
 
-  img, button {
+  img {
   user-select: none;
 } 
-  nav a 
+  nav {
+    font-family: 'Azeret Mono', monospace;
+  }
+
+
   `;

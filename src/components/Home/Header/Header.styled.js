@@ -4,6 +4,7 @@ export const Styled = styled.nav`
      ${props =>
     props.primary &&
     css`
+    height: 70px;
     border-bottom: 1px solid #D9E7F0;
     a {
         text-decoration: none;

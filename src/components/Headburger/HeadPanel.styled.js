@@ -10,9 +10,13 @@ export const HeadPanelStyled = styled.div`
         top: -200vh;
         transition: all .5s ease-out;
         transform: ${({ isOpen }) => isOpen ? 'translatey(200vh)' : 'translatey(-200vh)'};
-        padding-top: 75px;
+        padding: 50px 0px;
+        overflow: auto;
         a {
             width: 100%;
+        }
+        h3 {
+        margin: 0px;
         }
        
         .mobile {
