@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Styled } from './Header.styled'
 import Headburger from './Headburger'
 
+
 const active = { background: 'black', color: 'white' }
 function Header() {
     return (

@@ -19,7 +19,7 @@ function Contacts() {
         <Styled>
             <Container className="hidde-on-primary">
                 <Row>
-                    <Col md={6} className="mx-auto">
+                    <Col md={6} className="mx-auto pb-3">
                         <section className="text-center mb-4">
                             <h2 className="display-4"><strong>CONTACT US</strong></h2>
                             <p className="lead">We`d love to hear from you!</p>

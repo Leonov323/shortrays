@@ -7,12 +7,14 @@ export const Styled = styled.div`
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     padding-bottom: 20px;
+
+     }
      .hidde-on-primary {
        display: none;
      }
 
      @media screen and (max-width: 1199.9px) {
-      
       .hidde-on-primary {
        display: block;
      }
