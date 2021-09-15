@@ -33,3 +33,10 @@ export const Styled = styled.div`
           }
         
     `;
+
+    export const Chevrons = styled.div`
+     position: absolute;
+     bottom: 0;
+     left: 50;
+     z-index: 1;
+    `
