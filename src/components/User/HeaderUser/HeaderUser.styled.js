@@ -2,8 +2,8 @@ import styled, { css } from "styled-components"
 
 export const Styled = styled.nav`
      ${props =>
-        props.primary &&
-        css`
+    props.primary &&
+    css`
     border-bottom: 1px solid #D9E7F0;
      nav {
         height: 69.9px;
@@ -40,7 +40,7 @@ export const Styled = styled.nav`
             display: none;
         }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 767.9px) {
         .desctop {
             display: none;
         }

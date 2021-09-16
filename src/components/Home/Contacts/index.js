@@ -17,7 +17,7 @@ function Contacts() {
     };
     return (
         <Styled>
-            <Container className="hidde-on-primary">
+            <Container className="hidde-on-primary p-5">
                 <Row>
                     <Col md={6} className="mx-auto pb-3">
                         <section className="text-center mb-4">

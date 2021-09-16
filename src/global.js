@@ -29,8 +29,7 @@ export const GlobalStyles = createGlobalStyle`
   .min-100-71 {
       min-height: calc(100vh - 71px);
      }
-     .h70 {
+  .h70 {
         height: 70px;
     }
-
   `;

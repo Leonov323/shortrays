@@ -1,7 +1,7 @@
 import React from "react";
 import { GlobalStyles } from './global';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import { Header, Primary, Contacts, Service, SignIn, Footer } from './components'
+import { User, Home } from './components'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -9,24 +9,14 @@ function App() {
     <>
       <GlobalStyles />
       <Router>
-        <Header />
-        <Switch>
-          <Route path="/contact-us">
-            <Contacts />
-          </Route>
-          <Route path="/service">
-            <Service />
-          </Route>
-          <Route path="/sign-in">
-            <SignIn />
-          </Route>
-          <Route path="/">
-            <Primary />
-          </Route>
-        </Switch>
-       
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/user">
+          <User />
+        </Route>
       </Router>
-      <Footer />
+
     </>
   );
 }
