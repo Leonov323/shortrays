@@ -25,13 +25,16 @@ function Contacts() {
                             <p className="lead">We`d love to hear from you!</p>
                         </section>
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                            <Form.Group controlId="formGroupEmail">
+                            <Form.Group controlId="ContactsEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="example@example.com" required />
                             </Form.Group>
-                            <Form.Group controlId="formGroupSubject">
+                            <Form.Group controlId="ContactsSubject">
                                 <Form.Label className="mt-3">Subject</Form.Label>
                                 <Form.Control type="text" required />
+
+                            </Form.Group>
+                            <Form.Group controlId="ContactsMessage">
                                 <Form.Label className="mt-1">Message</Form.Label>
                                 <Form.Control as="textarea" rows={4} required />
                             </Form.Group>

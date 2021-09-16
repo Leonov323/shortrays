@@ -47,15 +47,15 @@ function MyVerticallyCenteredModal(props) {
             </Modal.Header>
             <Modal.Body>
                 <Form className="p-3" noValidate validated={validated} onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3" controlId="formGroupEmail">
+                    <Form.Group className="mb-3" controlId="RegistrationEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" required />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGroupPassword">
+                    <Form.Group className="mb-3" controlId="RegistrationPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="*******" required />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGroupRepeatPassword">
+                    <Form.Group className="mb-3" controlId="RegistrationRepeatPassword">
                         <Form.Label>Repeat password</Form.Label>
                         <Form.Control type="password" placeholder="*******" required />
                     </Form.Group>

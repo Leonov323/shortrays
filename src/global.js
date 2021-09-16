@@ -28,8 +28,18 @@ export const GlobalStyles = createGlobalStyle`
   }
   .min-100-71 {
       min-height: calc(100vh - 71px);
+      overflow: auto;
      }
+     .max-100-71 {
+          height: 99vh;;
+          overflow: auto;
+     }
+
   .h70 {
         height: 70px;
     }
+  
+  .w-46 {
+    width: 43%;
+  }
   `;

@@ -8,6 +8,8 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      
+      
       <Router>
         <Route path="/home">
           <Home />
@@ -15,8 +17,11 @@ function App() {
         <Route path="/user">
           <User />
         </Route>
+        <Switch>
+          
+        </Switch>
       </Router>
-
+     
     </>
   );
 }
