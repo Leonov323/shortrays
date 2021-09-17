@@ -7,8 +7,12 @@ export const Styled = styled.div`
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     min-height: calc(100vh - 72px);
 
-     }
+    .min {
+      min-height: calc(100vh - 72px)
+     };
+
      .hidde-on-primary {
        display: none;
      }
@@ -17,11 +21,10 @@ export const Styled = styled.div`
       .hidde-on-primary {
        display: block;
      }
-          }
      
     `;
 
-   export const Background = styled.div`
+export const Background = styled.div`
           position: absolute;
           z-index: -2;
           bottom: 0; 
@@ -34,9 +37,13 @@ export const Styled = styled.div`
         
     `;
 
-    export const Chevrons = styled.div`
-     position: absolute;
-     bottom: 0;
-     left: 50;
-     z-index: 1;
+export const Chevrons = styled.div`
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 50;
+    z-index: 1;
+    @media screen and (min-width: 1199.9px) {
+       display: none;
+    }
     `

@@ -29,10 +29,10 @@ function Headburger() {
                 </Container>
                 <HeadPanelStyled isOpen={isOpen}>
                     <Container className="col">
-                        <Link onClick={headerRedirect('/home/sign-in')} className="btn btn-success mb-5 mt-5" to="/sign-in"><h3>Sign in</h3></Link>
-                        <Link onClick={headerRedirect('/home/sign-up')} className="btn btn-primary mb-5" to="/sign-up"><h3>Sign up</h3></Link>
-                        <Link onClick={headerRedirect('/home/contact-us')} className="btn btn-info mb-5" to="/contact-us"><h3>Contacts</h3></Link>
-                        <Link onClick={headerRedirect('/home/service')} className="btn btn-warning" to="/blog"><h3>Service</h3></Link>
+                        <Link onClick={headerRedirect('/home/sign-in')} className="btn btn-success mb-5 mt-5" to="/home/sign-in"><h3>Sign in</h3></Link>
+                        <Link onClick={headerRedirect('/home/sign-up')} className="btn btn-primary mb-5" to="/home/sign-up"><h3>Sign up</h3></Link>
+                        <Link onClick={headerRedirect('/home/contact-us')} className="btn btn-info mb-5" to="/home/contact-us"><h3>Contacts</h3></Link>
+                        <Link onClick={headerRedirect('/home/service')} className="btn btn-warning" to="/home/blog"><h3>Service</h3></Link>
                     </Container>
                 </HeadPanelStyled>
             </Navbar>

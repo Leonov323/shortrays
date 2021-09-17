@@ -17,9 +17,9 @@ function Contacts() {
     };
     return (
         <Styled>
-            <Container className="hidde-on-primary p-5">
+            <Container className="hidde-on-primary">
                 <Row>
-                    <Col md={6} className="mx-auto pb-3">
+                    <Col lg={6} className="mx-auto">
                         <section className="text-center mb-4">
                             <h2 className="display-4"><strong>CONTACT US</strong></h2>
                             <p className="lead">We`d love to hear from you!</p>
@@ -32,7 +32,6 @@ function Contacts() {
                             <Form.Group controlId="ContactsSubject">
                                 <Form.Label className="mt-3">Subject</Form.Label>
                                 <Form.Control type="text" required />
-
                             </Form.Group>
                             <Form.Group controlId="ContactsMessage">
                                 <Form.Label className="mt-1">Message</Form.Label>

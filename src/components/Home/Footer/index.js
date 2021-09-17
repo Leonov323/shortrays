@@ -4,7 +4,7 @@ import React from 'react';
 function Footer() {
     return (
         <Styled>
-                <small className="footer">info@shortrays.com</small>
+                <small>info@shortrays.com</small>
         </Styled>
     );
 }

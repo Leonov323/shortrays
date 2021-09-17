@@ -5,6 +5,5 @@ export const Styled = styled.div`
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: center;
-     padding-bottom: 20px;
+     padding-top: 10vh;
     `;

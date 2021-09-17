@@ -1,22 +1,20 @@
 import React from "react";
+import Footer from '../Home/Footer';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import { Locations, HeaderUser } from './'
-export { default as Locations } from './Locations';
-export { default as HeaderUser } from './HeaderUser'
+import { HeaderUser, Main } from './';
+export { default as HeaderUser } from './HeaderUser';
+export { default as Main } from './Main';
 
 
 
 function User() {
     return (
         <>
-        <HeaderUser />
-            <Router> 
-                <Switch>
-                    <Route path="/user">
-                        <Locations />
-                    </Route>
-                </Switch>       
-            </Router>
+         <HeaderUser />
+        
+         <Main />
+         
+         <Footer />
         </>
     );
 }

@@ -13,7 +13,7 @@ function Primary() {
             <Styled>
                 <Container>
                     <Col>
-                        <Row className="min-100-71">
+                        <Row className="min">
                             <Col xl={6} className="pb-5 d-flex flex-column align-items-center justify-content-center">
                                 <section className="text-center">
                                     <h1>The way to better your service</h1>

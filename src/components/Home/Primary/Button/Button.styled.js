@@ -26,19 +26,24 @@ export const Styled = styled.div`
     font-family: 'Oswald', sans-serif;
     @media screen and (max-width: 420px) {
             letter-spacing: 5px;
-            width: 100%;
-          }}
+            width: 100%; 
+     } 
+   }
+
+
     .order-button:hover .textButtonNormal {
     display: none;
     }
+
     .order-button .textButtonHover {
     display: none;
     }
+
     .order-button:hover .textButtonHover {
     display: block;
     color: red;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     }
   
-    `;
+`;
 
