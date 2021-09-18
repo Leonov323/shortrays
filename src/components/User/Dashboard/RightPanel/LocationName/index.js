@@ -13,16 +13,21 @@ function LocationName() {
         }
         setValidated(true);
     };
-    const positionAndBorder = "border h-50 d-flex flex-column align-items-center justify-content-center"
     return (
         <Styled>
-            <Col className={positionAndBorder}>
+            <Col className="border h-50 d-flex flex-column align-items-center justify-content-center">
                 <h3>HELLO THIS IS LOCATIONNAME PAGE</h3>
             </Col>
-            <Col className={positionAndBorder}>
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <h3>Create new location</h3>
+            <Col className="d-flex align-items-center h-50">
+                <Form className="d-flex justify-content-around w-100" noValidate validated={validated} onSubmit={handleSubmit}>
                     <Form.Group controlId="CreateNewTable">
+                        <h3>Create new table</h3>
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control type="text" required placeholder="Ex. Ristorante da Mario" />
+                        <Button>Create</Button>
+                    </Form.Group>
+                    <Form.Group controlId="CreateNewTable">
+                        <h3>Create new waiter</h3>
                         <Form.Label>Name</Form.Label>
                         <Form.Control type="text" required placeholder="Ex. Ristorante da Mario" />
                         <Button>Create</Button>

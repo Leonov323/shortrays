@@ -16,7 +16,7 @@ function LeftNav() {
         <Styled>
             <LeftPanel isOpen={isOpen}>
                 <Col xs={10} className="overflow-auto full">
-                    <NavLink onClick={headerRedirect('/user/locations')} to="/user/locations" className="w-100 btn btn-dark mb-2">Locations</NavLink>
+                    <NavLink onClick={headerRedirect('/user/dashboard')} to="/user/dashboard" className="w-100 btn btn-dark mb-2">Locations</NavLink>
                     <ListNav />
                 </Col>
                 <Col xs={2} className="bg-light border hide-row">

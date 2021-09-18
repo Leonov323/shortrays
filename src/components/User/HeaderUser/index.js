@@ -12,16 +12,16 @@ function HeaderUser() {
             <Headburger />
             <Navbar bg="light" variant="light" className="desctop">
                 <Container fluid>
-                    <NavLink className="d-flex" to="/user">
+                    <NavLink className="d-flex" to="/user/dashboard">
                         <Image height="50" src={Logo} alt="QR code" />
                         {' '}<h2 className="d-flex align-items-center">Short<span>rays</span></h2>
                     </NavLink>
                     <Nav justify className="w-100">
                         <Nav.Item>
-                            <NavLink exact to="/user" activeStyle={active}>Dashboard</NavLink>
+                            <NavLink exact to="/user/dashboard" activeStyle={active}>Dashboard</NavLink>
                         </Nav.Item>
                         <Nav.Item>
-                            <NavLink exact to="/user/service" activeStyle={active}>Profile</NavLink>
+                            <NavLink exact to="/user/profile" activeStyle={active}>Profile</NavLink>
                         </Nav.Item>
                         <Nav.Item>
                             <NavLink exact to="/user/contact-us" activeStyle={active}>Contacts</NavLink>

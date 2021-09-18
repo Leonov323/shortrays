@@ -1,18 +1,14 @@
+import HeaderUser from './HeaderUser';
 import LeftNav from './Dashboard/LeftNav';
-import LocationName from "./Dashboard/RightPanel/LocationName";
-import Locations from './Dashboard/RightPanel/Locations'
+import { Locations, LocationName, Tables, TableName, Waiters, WaiterName } from './Dashboard/RightPanel'
 import Footer from '../Home/Footer';
-import { HeaderUser } from './';
-import React from "react";
 import { Container, Row, Col } from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import styled from "styled-components"
-export { default as HeaderUser } from './HeaderUser';
 
 const Styled = styled.div` 
      min-height: calc(100vh - 71px);
 `
-
 
 function User() {
     return (
@@ -27,11 +23,23 @@ function User() {
                             </Col>
                             <Col md={9} className="p-0 m-0">
                                 <Switch>
-                                    <Route path="/user/location-name">
+                                    <Route exact path="/user/dashboard">
+                                        <Locations />
+                                    </Route>
+                                    <Route path="/user/dashboard/location-name">
                                         <LocationName />
                                     </Route>
-                                    <Route path="/user/locations">
-                                        <Locations />
+                                    <Route path="/user/dashboard/tables">
+                                        <Tables />
+                                    </Route>
+                                    <Route path="/user/dashboard/table">
+                                        <TableName />
+                                    </Route>
+                                    <Route path="/user/dashboard/waiters">
+                                        <Waiters />
+                                    </Route>
+                                    <Route path="/user/dashboard/waiter">
+                                        <WaiterName />
                                     </Route>
                                 </Switch>
                             </Col>

@@ -17,17 +17,10 @@ function Locations() {
     return (
         <Styled>
             <Col className={positionAndBorder}>
-                <h3>HELLO THIS IS LOCATION PAGE</h3>
+                <h3>HELLO THIS IS TABLE PAGE</h3>
             </Col>
             <Col className={positionAndBorder}>
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <h3>Create new location</h3>
-                    <Form.Group controlId="CreateNewTable">
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" required placeholder="Ex. Ristorante da Mario" />
-                        <Button>Create</Button>
-                    </Form.Group>
-                </Form>
+                <h3>HERE IS IMAGE OF QR</h3>
             </Col>
         </Styled>
     );
