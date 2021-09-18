@@ -1,4 +1,4 @@
-import { Container, FloatingLabel, Form, Row, Col, Button } from 'react-bootstrap';
+import { FloatingLabel, Form, Row, Col, Button } from 'react-bootstrap';
 import { Styled } from './SignIn.styled';
 import React, { useState } from 'react';
 
@@ -17,7 +17,6 @@ function SignIn() {
     };
     return (
         <Styled>
-            <Container className="hidde-on-primary">
                 <Row>
                     <Col lg={4} className="mx-auto">
                         <section className="text-center mb-4">
@@ -40,7 +39,6 @@ function SignIn() {
                         </Form>
                     </Col>
                 </Row>
-            </Container>
         </Styled>
     );
 }

@@ -1,4 +1,4 @@
-import { Container, Row, Col, Image, } from 'react-bootstrap';
+ import { Container, Row, Col, Image, } from 'react-bootstrap';
 import { Styled, Background, Chevrons } from './Primary.styled';
 import Arm from '../../../img/arm-min3.png';
 import OrderButton from './Button';
