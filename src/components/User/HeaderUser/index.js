@@ -24,7 +24,7 @@ function HeaderUser() {
                             <NavLink exact to="/user/profile" activeStyle={active}>Profile</NavLink>
                         </Nav.Item>
                         <Nav.Item>
-                            <NavLink exact to="/user/contact-us" activeStyle={active}>Contacts</NavLink>
+                            <NavLink exact to="/user/contact-us" activeStyle={active}>Need help</NavLink>
                         </Nav.Item>
                         <Nav.Item>
                             <NavLink exact to="/" activeStyle={active}>Sign Out</NavLink>
