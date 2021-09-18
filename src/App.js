@@ -8,20 +8,12 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      
-      
       <Router>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/user">
-          <User />
-        </Route>
         <Switch>
-          
+          <Route path="/" exact component={Home} />
+          <Route path="/user" exact component={User} />
         </Switch>
       </Router>
-     
     </>
   );
 }

@@ -9,27 +9,27 @@ const active = { background: 'black', color: 'white' }
 function HeaderUser() {
     return (
         <Styled primary>
-            <Headburger/>
+            <Headburger />
             <Navbar bg="light" variant="light" className="desctop">
                 <Container fluid>
-                            <NavLink className="d-flex" to="/user">
-                                <Image height="50" src={Logo} alt="QR code" />
-                                {' '}<h2 className="d-flex align-items-center">Short<span>rays</span></h2>
-                            </NavLink>
-                            <Nav justify className="w-100">
-                                <Nav.Item>
-                                    <NavLink to="/user" activeStyle={active}>Locations</NavLink>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <NavLink to="/user/service" activeStyle={active}>Service</NavLink>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <NavLink to="/user/contact-us" activeStyle={active}>Contacts</NavLink>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <NavLink to="/home" activeStyle={active}>Sign Out</NavLink>
-                                </Nav.Item>
-                            </Nav>
+                    <NavLink className="d-flex" to="/user">
+                        <Image height="50" src={Logo} alt="QR code" />
+                        {' '}<h2 className="d-flex align-items-center">Short<span>rays</span></h2>
+                    </NavLink>
+                    <Nav justify className="w-100">
+                        <Nav.Item>
+                            <NavLink exact to="/user" activeStyle={active}>Dashboard</NavLink>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <NavLink exact to="/user/service" activeStyle={active}>Profile</NavLink>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <NavLink exact to="/user/contact-us" activeStyle={active}>Contacts</NavLink>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <NavLink exact to="/" activeStyle={active}>Sign Out</NavLink>
+                        </Nav.Item>
+                    </Nav>
                 </Container>
             </Navbar>
         </Styled>

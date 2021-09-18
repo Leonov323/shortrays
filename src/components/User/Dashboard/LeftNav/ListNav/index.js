@@ -13,7 +13,7 @@ function ListNav() {
     return (
         <Styled>
             <Col>
-                <NavLink onClick={headerRedirect('./user')} to="/user" className="w-75 btn btn-secondary mb-1">Your location 1</NavLink>
+                <NavLink onClick={headerRedirect('/user/location-name')} to="/user/location-name" className="w-75 btn btn-secondary mb-1">Your location 1</NavLink>
                 <Col>
                     <NavLink onClick={headerRedirect('./user')} to="/user" className="w-50  h-100 btn btn-secondary mb-1">Tables</NavLink>
                     <Col className="p-2">

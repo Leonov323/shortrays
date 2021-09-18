@@ -16,16 +16,16 @@ function Home() {
             <Router>
                 <Header />
                 <Switch>
-                    <Route path="/home/contact-us">
+                    <Route path="/contact-us" exact>
                         <Contacts />
                     </Route>
-                    <Route path="/home/service">
+                    <Route path="/service" exact>
                         <Service />
                     </Route>
-                    <Route path="/home/sign-in">
+                    <Route path="/sign-in" exact>
                         <SignIn />
                     </Route>
-                    <Route path="/home">
+                    <Route path="/" exact>
                         <Primary />
                     </Route>
                 </Switch>

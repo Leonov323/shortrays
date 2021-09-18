@@ -18,7 +18,7 @@ function Headburger() {
             <HeaderSpace />
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
                 <Container fluid className="bg-dark h70">
-                    <Link className="d-flex" onClick={headerRedirect('/home')} to="/home">
+                    <Link className="d-flex" onClick={headerRedirect('/')} to="/">
                         <img src={Logo} height="40" alt="burger" className="p-2" />
                         {' '}
                         <h2>SHORT<span>RAYS</span></h2>
@@ -29,10 +29,10 @@ function Headburger() {
                 </Container>
                 <HeadPanelStyled isOpen={isOpen}>
                     <Container className="col">
-                        <Link onClick={headerRedirect('/home/sign-in')} className="btn btn-success mb-5 mt-5" to="/home/sign-in"><h3>Sign in</h3></Link>
-                        <Link onClick={headerRedirect('/home/sign-up')} className="btn btn-primary mb-5" to="/home/sign-up"><h3>Sign up</h3></Link>
-                        <Link onClick={headerRedirect('/home/contact-us')} className="btn btn-info mb-5" to="/home/contact-us"><h3>Contacts</h3></Link>
-                        <Link onClick={headerRedirect('/home/service')} className="btn btn-warning" to="/home/blog"><h3>Service</h3></Link>
+                        <Link onClick={headerRedirect('/sign-in')} className="btn btn-success mb-5 mt-5" to="/sign-in"><h3>Sign in</h3></Link>
+                        <Link onClick={headerRedirect('/sign-up')} className="btn btn-primary mb-5" to="/sign-up"><h3>Sign up</h3></Link>
+                        <Link onClick={headerRedirect('/contact-us')} className="btn btn-info mb-5" to="/contact-us"><h3>Contacts</h3></Link>
+                        <Link onClick={headerRedirect('/service')} className="btn btn-warning" to="/service"><h3>Service</h3></Link>
                     </Container>
                 </HeadPanelStyled>
             </Navbar>
