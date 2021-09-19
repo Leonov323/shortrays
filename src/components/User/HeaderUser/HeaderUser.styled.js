@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 export const Styled = styled.nav`
      ${props =>
@@ -51,4 +51,4 @@ export const Styled = styled.nav`
             color: white;
         }
     }
-    `;
+    `

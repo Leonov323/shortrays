@@ -1,21 +1,20 @@
-import { Container, Button, Col, Form, Row } from 'react-bootstrap';
-import { Styled } from './Contacts.styled';
-import React, { useState } from 'react';
+import { Container, Button, Col, Form, Row } from 'react-bootstrap'
+import { Styled } from './Contacts.styled'
+import React, { useState } from 'react'
 
+function Contacts () {
+  const [validated, setValidated] = useState(false)
 
-function Contacts() {
-    const [validated, setValidated] = useState(false);
+  const handleSubmit = (event) => {
+    const form = event.currentTarget
+    if (form.checkValidity() === false) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
 
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-
-        setValidated(true);
-    };
-    return (
+    setValidated(true)
+  }
+  return (
         <Styled>
             <Container className="hidde-on-primary">
                 <Row>
@@ -43,7 +42,7 @@ function Contacts() {
                 </Row>
             </Container>
         </Styled>
-    );
+  )
 }
 
-export default Contacts;
+export default Contacts

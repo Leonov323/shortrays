@@ -1,18 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import { Header, Primary, Contacts, Service, SignIn, Footer } from './'
-export { default as Header } from './Header';
-export { default as Primary } from './Primary';
-export { default as Contacts } from './Contacts';
-export { default as Service } from './Service';
-export { default as SignIn } from './SignIn';
-export { default as Footer } from './Footer';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Header } from './Header'
+import { Primary, Contacts, Service, SignIn } from './Pages'
+import Footer from './Footer'
 
-
-
-function Home() {
-    return (
-        <>
+export function Home () {
+  return (
             <Router>
                 <Header />
                 <Switch>
@@ -31,8 +24,5 @@ function Home() {
                 </Switch>
                 <Footer />
             </Router>
-        </>
-    );
+  )
 }
-
-export default Home;

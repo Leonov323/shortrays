@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -27,4 +26,4 @@ export const GlobalStyles = createGlobalStyle`
   .h70 {
         height: 70px;
     }
-  `;
+  `

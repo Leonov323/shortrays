@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Styled = styled.div`
      min-height: calc(100vh - 71px);
@@ -7,4 +7,4 @@ export const Styled = styled.div`
      align-items: center;
      justify-content: center;
      padding-bottom: 20px;
-    `;
+    `

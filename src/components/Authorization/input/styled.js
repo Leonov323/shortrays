@@ -5,7 +5,7 @@ export const ContainerStyled = styled.div`
   flex-direction: column;
 `;
 
-export const LabelStyled = styled.p`
+export const LabelStyled = styled.label`
   flex: 1;
   color: red;
 `;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Styled = styled.div` 
      min-height: calc(100vh - 92px);
@@ -10,4 +10,4 @@ export const Styled = styled.div`
      left: 18vw;
      z-index: 4;
           }
-    `;
+    `

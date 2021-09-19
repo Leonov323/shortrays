@@ -1,44 +1,24 @@
-import { Styled } from './Button.styled';
-import React, { useState } from 'react';
-import { Modal, Button, Form, Image } from 'react-bootstrap';
-import Logo from '../../../../img/logo3.png';
+import React, { useState } from 'react'
+import { Modal, Button, Form, Image } from 'react-bootstrap'
+import Logo from '../../../../../../img/logo3.png'
 
-function OrderButton() {
-    const [modalShow, setModalShow] = React.useState(false);
-    return (
-        <>
-            <Styled>
-                <button className="order-button" onClick={() => setModalShow(true)}>
-                    <span className="textButtonNormal">Register now</span>
-                    <span className="textButtonHover">You are awesome!</span>
-                </button>
-            </Styled>
-            <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-            />
-        </>
-    );
-}
-
-function MyVerticallyCenteredModal(props) {
-    const [validated, setValidated] = useState(false);
-
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-
-        setValidated(true);
-    };
-    return (
+function MyVerticallyCenteredModal (props) {
+  const [validated, setValidated] = useState(false)
+  const handleSubmit = (event) => {
+    const form = event.currentTarget
+    if (form.checkValidity() === false) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+    setValidated(true)
+  }
+  return (
         <Modal
             {...props}
             size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered
+
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
@@ -67,7 +47,7 @@ function MyVerticallyCenteredModal(props) {
                 <Image src={Logo} width="35px" />
             </Modal.Footer>
         </Modal>
-    );
+  )
 }
 
-export default OrderButton;
+export default MyVerticallyCenteredModal

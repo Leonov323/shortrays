@@ -1,13 +1,13 @@
-import { Navbar, Image, Container, Nav } from 'react-bootstrap';
-import Logo from '../../../img/logo3.png';
-import { NavLink } from 'react-router-dom';
+import { Navbar, Image, Container, Nav } from 'react-bootstrap'
+import Logo from '../../../img/logo3.png'
+import { NavLink } from 'react-router-dom'
 import { Styled } from './HeaderUser.styled'
 import Headburger from './Headburger'
-
+import React from 'react'
 
 const active = { background: 'black', color: 'white' }
-function HeaderUser() {
-    return (
+function HeaderUser () {
+  return (
         <Styled primary>
             <Headburger />
             <Navbar bg="light" variant="light" className="desctop">
@@ -33,7 +33,7 @@ function HeaderUser() {
                 </Container>
             </Navbar>
         </Styled>
-    );
+  )
 }
 
-export default HeaderUser;
+export default HeaderUser

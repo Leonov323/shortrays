@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes } from 'styled-components'
 
 const fadeIn = keyframes`
 0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
@@ -45,5 +45,4 @@ export const Styled = styled.div`
     letter-spacing: 1px;
     }
   
-`;
-
+`

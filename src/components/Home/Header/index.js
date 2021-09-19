@@ -6,7 +6,7 @@ import Headburger from './Headburger'
 
 
 const active = { background: 'black', color: 'white' }
-function Header() {
+export function Header() {
     return (
         <Styled primary>
             <Headburger/>
@@ -35,5 +35,3 @@ function Header() {
         </Styled>
     );
 }
-
-export default Header;

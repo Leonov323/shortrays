@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Styled = styled.div` 
      font-family: 'lato', sans-serif;
@@ -20,7 +20,7 @@ export const Styled = styled.div`
           @media screen and (min-width: 767.9px){
                display: none;
           }
-    `;
+    `
 
 export const LeftPanel = styled.div`
           margin: 0px;

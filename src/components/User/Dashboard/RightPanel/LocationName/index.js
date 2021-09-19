@@ -1,19 +1,19 @@
 import { Styled } from './Location.styled'
-import { Col, Button, Form, Container } from 'react-bootstrap'
-import React, { useState } from 'react';
+import { Col, Button, Form } from 'react-bootstrap'
+import React, { useState } from 'react'
 
-function LocationName() {
-    // validation
-    const [validated, setValidated] = useState(false);
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        setValidated(true);
-    };
-    return (
+function LocationName () {
+  // validation
+  const [validated, setValidated] = useState(false)
+  const handleSubmit = (event) => {
+    const form = event.currentTarget
+    if (form.checkValidity() === false) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+    setValidated(true)
+  }
+  return (
         <Styled>
             <Col className="border h-50 d-flex flex-column align-items-center justify-content-center">
                 <h3>HELLO THIS IS LOCATIONNAME PAGE</h3>
@@ -35,6 +35,6 @@ function LocationName() {
                 </Form>
             </Col>
         </Styled>
-    );
+  )
 }
-export default LocationName;
+export default LocationName
