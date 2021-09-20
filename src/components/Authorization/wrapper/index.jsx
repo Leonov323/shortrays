@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { WrapperStyled } from './styled';
 
 export const AuthorizationWrapper = (props) => {

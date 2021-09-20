@@ -1,19 +1,19 @@
-import { HeadPanelStyled, HeaderSpace } from "./HeadPanel.styled";
+import { HeadPanelStyled, HeaderSpace } from './HeadPanel.styled'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import Logo from '../../../../img/icon.png';
-import React, { useState } from 'react';
-import { Squash as Hamburger } from 'hamburger-react';
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-import { Link } from 'react-router-dom';
+import Logo from '../../../../img/icon.png'
+import React, { useState } from 'react'
+import { Squash as Hamburger } from 'hamburger-react'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { Link } from 'react-router-dom'
 
-function Headburger() {
-    const [isOpen, setOpen] = useState(false);
-    isOpen ? disableBodyScroll(document) : enableBodyScroll(document);
-    const headerRedirect = (route) => () => {
-        setOpen(false);
-    };
+function Headburger () {
+  const [isOpen, setOpen] = useState(false)
+  isOpen ? disableBodyScroll(document) : enableBodyScroll(document)
+  const headerRedirect = (route) => () => {
+    setOpen(false)
+  }
 
-    return (
+  return (
         <Container className="mobile">
             <HeaderSpace />
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
@@ -37,7 +37,7 @@ function Headburger() {
                 </HeadPanelStyled>
             </Navbar>
         </Container>
-    );
+  )
 }
 
-export default Headburger;
+export default Headburger

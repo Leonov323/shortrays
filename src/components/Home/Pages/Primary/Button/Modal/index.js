@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Modal, Button, Form, Image } from 'react-bootstrap'
+import { Modal, Form, Image } from 'react-bootstrap'
 import Logo from '../../../../../../img/logo3.png'
+import Button from '../../../../../UI/Button'
 
 function MyVerticallyCenteredModal (props) {
   const [validated, setValidated] = useState(false)
@@ -39,7 +40,7 @@ function MyVerticallyCenteredModal (props) {
                         <Form.Label>Repeat password</Form.Label>
                         <Form.Control type="password" placeholder="*******" required />
                     </Form.Group>
-                    <Button type="submit" variant="dark">Cilck me!</Button>
+                    <Button text="Click me!" />
                 </Form>
             </Modal.Body>
             <Modal.Footer>

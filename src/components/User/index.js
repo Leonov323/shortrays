@@ -1,7 +1,7 @@
 import HeaderUser from './HeaderUser'
 import LeftNav from './Dashboard/LeftNav'
 import { Locations, LocationName, Tables, TableName, Waiters, WaiterName } from './Dashboard/RightPanel'
-import Footer from '../Home/Footer'
+import Footer from '../UI/Footer'
 import { Container, Row, Col } from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import styled from 'styled-components'

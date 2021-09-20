@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react'
 import { AuthorizationWrapper } from './wrapper'
 import { AuthorizationInput } from './input'

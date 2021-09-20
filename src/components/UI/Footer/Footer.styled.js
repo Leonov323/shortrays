@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Styled = styled.footer`
      position: fixed;
@@ -10,4 +10,4 @@ export const Styled = styled.footer`
      background: black;
      color: white;
      diplay: block;
-    `;
+    `

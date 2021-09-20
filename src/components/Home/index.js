@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Header } from './Header'
 import { Primary, Contacts, Service, SignIn } from './Pages'
-import Footer from './Footer'
+import Footer from '../UI/Footer'
 
 export function Home () {
   return (

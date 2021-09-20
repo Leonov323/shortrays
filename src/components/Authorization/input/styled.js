@@ -1,16 +1,17 @@
-import styled from "styled-components"
+/* eslint-disable */
+import styled from 'styled-components'
 
 export const ContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
-`;
+`
 
 export const LabelStyled = styled.label`
   flex: 1;
   color: red;
-`;
+`
 
 export const InputStyled = styled.input`
   flex: 1;
   color: green;
-`;
+`

@@ -1,6 +1,7 @@
-import { FloatingLabel, Form, Row, Col, Button } from 'react-bootstrap'
+import { FloatingLabel, Form, Row, Col } from 'react-bootstrap'
 import { Styled } from './SignIn.styled'
 import React, { useState } from 'react'
+import Button from '../../../UI/Button'
 
 function SignIn () {
   const [validated, setValidated] = useState(false)
@@ -34,7 +35,7 @@ function SignIn () {
                         <FloatingLabel controlId="floatingPassword" label="Password">
                             <Form.Control type="password" placeholder="Password" required/>
                         </FloatingLabel>
-                        <Button type="submit" variant="dark" className="mt-3">Sign in</Button>
+                        <Button text="Sign in" />
                         </Form>
                     </Col>
                 </Row>

@@ -1,6 +1,7 @@
-import { Container, Button, Col, Form, Row } from 'react-bootstrap'
+import { Container, Col, Form, Row } from 'react-bootstrap'
 import { Styled } from './Contacts.styled'
 import React, { useState } from 'react'
+import Button from '../../../UI/Button'
 
 function Contacts () {
   const [validated, setValidated] = useState(false)
@@ -36,7 +37,7 @@ function Contacts () {
                                 <Form.Label className="mt-1">Message</Form.Label>
                                 <Form.Control as="textarea" rows={4} required />
                             </Form.Group>
-                            <Button type="submit" variant="dark" className="mt-3">Send</Button>
+                            <Button text="SEND"/>
                         </Form>
                     </Col>
                 </Row>
