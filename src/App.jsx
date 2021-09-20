@@ -1,10 +1,10 @@
-import { GlobalStyles } from './global'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { User, Home, Authorization } from './components'
-import 'bootstrap/dist/css/bootstrap.css'
-import React from 'react'
+import { GlobalStyles } from './global';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { User, Home, Authorization } from './components';
+import 'bootstrap/dist/css/bootstrap.css';
+import React from 'react';
 
-function App () {
+function App() {
   return (
     <>
       <GlobalStyles />
@@ -16,7 +16,7 @@ function App () {
         </Switch>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

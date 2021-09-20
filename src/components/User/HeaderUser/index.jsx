@@ -1,18 +1,18 @@
 import { Navbar, Image, Container, Nav } from 'react-bootstrap';
 import Logo from '../../../img/logo3.png';
 import { NavLink } from 'react-router-dom';
-import { Styled } from './Header.styled';
+import { Styled } from './HeaderUser.styled';
 import Headburger from './Headburger';
 import React from 'react';
 
 const active = { background: 'black', color: 'white' };
-export function Header() {
+function HeaderUser() {
   return (
     <Styled primary>
       <Headburger />
       <Navbar bg="light" variant="light" className="desctop">
         <Container fluid>
-          <NavLink className="d-flex" to="/">
+          <NavLink className="d-flex" to="/user/dashboard">
             <Image height="50" src={Logo} alt="QR code" />{' '}
             <h2 className="d-flex align-items-center">
               Short<span>rays</span>
@@ -20,23 +20,23 @@ export function Header() {
           </NavLink>
           <Nav justify className="w-100">
             <Nav.Item>
+              <NavLink exact to="/user/dashboard" activeStyle={active}>
+                Dashboard
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink exact to="/user/profile" activeStyle={active}>
+                Profile
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink exact to="/user/contact-us" activeStyle={active}>
+                Need help
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
               <NavLink exact to="/" activeStyle={active}>
-                Home
-              </NavLink>
-            </Nav.Item>
-            <Nav.Item>
-              <NavLink exact to="/service" activeStyle={active}>
-                Service
-              </NavLink>
-            </Nav.Item>
-            <Nav.Item>
-              <NavLink exact to="/contact-us" activeStyle={active}>
-                Contacts
-              </NavLink>
-            </Nav.Item>
-            <Nav.Item>
-              <NavLink exact to="/sign-in" activeStyle={active}>
-                Sign In
+                Sign Out
               </NavLink>
             </Nav.Item>
           </Nav>
@@ -45,3 +45,5 @@ export function Header() {
     </Styled>
   );
 }
+
+export default HeaderUser;

@@ -1,6 +1,12 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['plugin:prettier/recommended', 'eslint:recommended', 'plugin:react/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'react-app',
+    'react-app/jest',
+    'plugin:react/recommended',
+  ],
   root: true,
   env: {
     node: true,
