@@ -9,16 +9,16 @@ export function Home() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/contact-us" exact>
+        <Route exact path="/contact-us">
           <Contacts />
         </Route>
-        <Route path="/service" exact>
+        <Route exact path="/service">
           <Service />
         </Route>
-        <Route path="/sign-in" exact>
+        <Route exact path="/sign-in">
           <SignIn />
         </Route>
-        <Route path="/" exact>
+        <Route exact path="/">
           <Primary />
         </Route>
       </Switch>

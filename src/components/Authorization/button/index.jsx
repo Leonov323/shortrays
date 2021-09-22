@@ -1,11 +1,18 @@
-/* eslint-disable */
 import { ButtonStyled } from './styled'
 import React from 'react'
+import PropTypes from 'prop-types';
 
-export const AuthorizationSubmit = (props) => {
+const AuthorizationSubmit = (props) => {
   const { text, onSubmit } = props
 
   return <ButtonStyled onClick={onSubmit}>
-        {text}
-    </ButtonStyled>
+    {text}
+  </ButtonStyled>
 }
+
+AuthorizationSubmit.propTypes = {
+  text: PropTypes.string.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
+
+export default AuthorizationSubmit;

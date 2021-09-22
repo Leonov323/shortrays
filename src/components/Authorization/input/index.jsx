@@ -6,14 +6,14 @@ export const AuthorizationInput = (props) => {
   AuthorizationInput.propTypes = {
 
   }
-  const { labelText, onChange, value } = props
+  const { labelText, onChange, value, placeholder } = props
   const inputChange = (e) => {
     onChange(e.target.value)
   }
   return (
         <ContainerStyled>
             <LabelStyled>{labelText}</LabelStyled>
-            <InputStyled onChange={inputChange} value={value} />
+            <InputStyled onChange={inputChange} value={value} placeholder={placeholder} />
         </ContainerStyled>
   )
 }

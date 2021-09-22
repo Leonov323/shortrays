@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styled } from './Primary.styled';
 import OrderButton from './Button';
-import Chevrons from './Chevrons';
+import Chevrons from '../../../UI/Chevrons';
 import Background from './Background';
 import { Link } from 'react-router-dom';
 import React from 'react';

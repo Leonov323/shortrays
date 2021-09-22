@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     text-rendering: optimizeLegibility;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden !important;
     background: #f8f9fA;
   }

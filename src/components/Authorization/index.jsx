@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { AuthorizationWrapper } from './wrapper'
 import { AuthorizationInput } from './input'
-import { AuthorizationSubmit } from './button'
+import AuthorizationSubmit from './button'
 import axios from 'axios'
 
 const API_ENDPOINT = 'https://api-shortrays-dev.herokuapp.com/'

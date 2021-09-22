@@ -10,9 +10,9 @@ function App() {
       <GlobalStyles />
       <Router>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/user/dashboard" exact component={User} />
-          <Route path="/authorization" exact component={Authorization} />
+          <Route exact path="/" component={Home} />
+          <Route path="/user/dashboard" component={User} />
+          <Route path="/authorization" component={Authorization} />
         </Switch>
       </Router>
     </>

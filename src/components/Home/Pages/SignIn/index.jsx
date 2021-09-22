@@ -2,7 +2,9 @@ import { FloatingLabel, Form, Row, Col } from 'react-bootstrap';
 import { Styled } from './SignIn.styled';
 import React, { useState } from 'react';
 import Button from '../../../UI/Button';
+import axios from 'axios';
 
+const API_ENDPOINT = 'https://api-shortrays-dev.herokuapp.com/';
 function SignIn() {
   const [validated, setValidated] = useState(false);
 
@@ -14,6 +16,23 @@ function SignIn() {
     }
 
     setValidated(true);
+  };
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post(`${API_ENDPOINT}sign-in`, {
+        email,
+        password,
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
   return (
     <Styled>
@@ -27,12 +46,22 @@ function SignIn() {
           </section>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
-              <Form.Control type="email" placeholder="name@example.com" required />
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
             </FloatingLabel>
             <FloatingLabel controlId="floatingPassword" label="Password">
-              <Form.Control type="password" placeholder="Password" required />
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
             </FloatingLabel>
-            <Button text="Sign in" />
+            <Button onSubmit={onSubmit} text="Sign in" />
           </Form>
         </Col>
       </Row>
