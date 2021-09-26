@@ -13,13 +13,13 @@ const User: FC = () => {
       <Header {...headerData} />
       <UserWrapperStyled>
         <Switch>
-          <Route exact path="/user">
+          <Route exact path="/shortrays/user">
             <Dashboard />
           </Route>
-          <Route path="/user/profile">
+          <Route path="/shortrays/user/profile">
             <Profile />
           </Route>
-          <Route path="/user/logout">
+          <Route path="/shortrays/user/logout">
             <Logout />
           </Route>
         </Switch>

@@ -6,20 +6,20 @@ export const headerData: HeaderProps = {
   nav: {
     links: [
       {
-        link: '/user',
+        link: '/shortrays/user',
         text: 'DASHBOARD'
       },
       {
-        link: '/user/profile',
+        link: '/shortrays/user/profile',
         text: 'PROFILE'
       },
       {
-        link: `/user/logout`,
+        link: `/shortrays/user/logout`,
         text: 'LOGOUT'
       },
     ]
   },
   logoLink: {
-    logoLink: '/user'
+    logoLink: '/shortrays/user'
   }
 }

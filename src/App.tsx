@@ -9,12 +9,12 @@ const App: FC = () => {
   return (
     <>
       <GlobalStyles />
-      <Router>
+      <Router basename="https://leonov323.github.io/shortrays/">
         <Switch>
-          <Route path="/user">
+          <Route path="/shortrays/user">
             <User />
           </Route>
-          <Route path="/">
+          <Route path="/shortrays/">
             <Home />
           </Route>
         </Switch>

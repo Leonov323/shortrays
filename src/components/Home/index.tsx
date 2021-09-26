@@ -14,16 +14,16 @@ const Home: FC = () => {
       <Header {...headerData} />
       <HomeWrapperStyled>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/shortrays/">
             <Primary />
           </Route>
-          <Route path="/service">
+          <Route path="/shortrays/service">
             <Service />
           </Route>
-          <Route path="/contact-us">
+          <Route path="/shortrays/contact-us">
             <Contacts />
           </Route>
-          <Route path="/login">
+          <Route path="/shortrays/login">
             <Login />
           </Route>
         </Switch>
