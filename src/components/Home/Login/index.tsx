@@ -8,7 +8,10 @@ const Login: React.FC = () => {
 
   return (
     <LoginStyled>
-      <h2 className="text-center mb-5 fs-1">Welcome!</h2>
+      <section className="w-100 text-center mb-5">
+      <h2 className="fs-1 text-center">Welcome!</h2>
+      <small className="text-center">(Just click the enter button to redirect on user page)</small>
+      </section>
       <Form />
     </LoginStyled>
   )
