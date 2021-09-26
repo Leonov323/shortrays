@@ -4,19 +4,19 @@ export const headerData: HeaderProps = {
   nav: {
     links: [
       {
-        link: '/shortrays/',
+        link: '/',
         text: 'HOME'
       },
       {
-        link: '/shortrays/service',
+        link: '/service',
         text: 'SERVICE'
       },
       {
-        link: '/shortrays/contact-us',
+        link: '/contact-us',
         text: 'CONTACT US'
       },
       {
-        link: '/shortrays/login',
+        link: '/login',
         text: 'LOGIN'
       },
     ]

@@ -4,7 +4,7 @@ import { UserWrapperStyled } from './styled'
 import Dashboard from './Dashboard'
 import Profile from './Profile'
 import Logout from './Logout'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
 import { headerData } from './headerData'
 
 const User: FC = () => {
@@ -13,13 +13,13 @@ const User: FC = () => {
       <Header {...headerData} />
       <UserWrapperStyled>
         <Switch>
-          <Route exact path="/shortrays/user">
+          <Route exact path="/user">
             <Dashboard />
           </Route>
-          <Route path="/shortrays/user/profile">
+          <Route path="/user/profile">
             <Profile />
           </Route>
-          <Route path="/shortrays/user/logout">
+          <Route path="/user/logout">
             <Logout />
           </Route>
         </Switch>

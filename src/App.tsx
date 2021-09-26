@@ -2,19 +2,19 @@ import React, { FC } from 'react'
 import { GlobalStyles } from './Global'
 import Home from './components/Home'
 import User from './components/User'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
 
 const App: FC = () => {
 
   return (
     <>
       <GlobalStyles />
-      <Router basename="https://leonov323.github.io/shortrays/">
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path="/shortrays/user">
+          <Route path="/user">
             <User />
           </Route>
-          <Route path="/shortrays/">
+          <Route path="/">
             <Home />
           </Route>
         </Switch>

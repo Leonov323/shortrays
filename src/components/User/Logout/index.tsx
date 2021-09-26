@@ -5,7 +5,7 @@ const Logout: FC = () => {
     const history = useHistory()
     const current_url = location.pathname
     const autoLogout = () => {
-        if (current_url == '/shortrays/user/logout') {
+        if (current_url == '/user/logout') {
             localStorage.removeItem('token')
             history.push('/')
             window.location.reload()

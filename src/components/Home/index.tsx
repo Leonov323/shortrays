@@ -5,7 +5,7 @@ import Primary from './Primary'
 import Service from './Service'
 import Contacts from './Contacts'
 import Login from './Login'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
 import { headerData } from './headerData'
 
 const Home: FC = () => {
@@ -14,16 +14,16 @@ const Home: FC = () => {
       <Header {...headerData} />
       <HomeWrapperStyled>
         <Switch>
-          <Route exact path="/shortrays/">
+          <Route exact path="/">
             <Primary />
           </Route>
-          <Route path="/shortrays/service">
+          <Route path="/service">
             <Service />
           </Route>
-          <Route path="/shortrays/contact-us">
+          <Route path="/contact-us">
             <Contacts />
           </Route>
-          <Route path="/shortrays/login">
+          <Route path="/login">
             <Login />
           </Route>
         </Switch>
