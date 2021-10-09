@@ -1,7 +1,8 @@
-import { LinkProps } from './Link/types';
+import { LinkProps } from './Link/types'
 
 export type NavProps = {
   links: LinkProps[]
+  exact?: boolean
   isOpen?: boolean
   };
 

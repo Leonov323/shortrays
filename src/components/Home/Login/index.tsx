@@ -1,20 +1,24 @@
-import React from 'react';
+import React from 'react'
 import { LoginStyled } from './styled'
-import Form from './form'
+import { Form } from './form'
+import { checkAuthLogin } from '../../../common/services/common/checkAuth'
 
 
+export const Login = () => {
 
-const Login: React.FC = () => {
-
+  checkAuthLogin()
+  
   return (
+
     <LoginStyled>
-      <section className="w-100 text-center mb-5">
-      <h2 className="fs-1 text-center">Welcome!</h2>
-      <small className="text-center">(Just click the enter button to redirect on user page)</small>
-      </section>
+
+      <h2 className="text-center mb-5 fs-1">Welcome!</h2>
+
       <Form />
+
     </LoginStyled>
+    
   )
+
 }
 
-export default Login

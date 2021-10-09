@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { FooterStyled } from './styled'
 
-const Footer: FC = () => {
+export const Footer = () => {
   return (
    <FooterStyled>
      <h6>info@shortrays.com</h6>
@@ -9,4 +9,4 @@ const Footer: FC = () => {
   )
 }
 
-export default Footer
+

@@ -8,17 +8,17 @@ export const NavStyled = styled.nav<NavStyledProps>`
     font-weight: 500;
     @media (max-width: 768px) {
       position: fixed;
-      bottom: 30px;
+      top: 70px;
       font-weight: 700;
       transition: opacity .3s ease-out;
-      bottom: ${({ isOpen }) => isOpen ? '30px' : '100vh'};
+      top: ${({ isOpen }) => isOpen ? '70px' : '-500vh'};
       opacity: ${({ isOpen }) => isOpen ? '1' : '0'};
       left: 0;
       background: #ffffffc7;
       height: calc(100vh - 100px);
       display: block;
       div {
-          width: 90%;
+          width: 80%;
           height: 15vh;
           display: flex;
           align-items: center;

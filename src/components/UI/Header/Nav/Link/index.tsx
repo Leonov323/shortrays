@@ -1,22 +1,21 @@
 import React, { FC } from 'react'
 import { LinkStyled } from './styled'
 import { NavLink } from 'react-router-dom'
-import { LinkProps } from "./types";
+import { LinkProps } from './types'
 
 const Link: FC<LinkProps> = (props) => {
 
   return (
-
-    <LinkStyled>
+    <LinkStyled >
       <NavLink
-        exact
+        onClick={props.onClick}
+        exact={props.exact}
         to={props.link}
-        activeStyle={{background: "black", color: "white"}}
+        activeStyle={{ background: 'black', color: 'white' }}
       >
         {props.text}
       </NavLink>
     </LinkStyled>
-    
   )
 }
 

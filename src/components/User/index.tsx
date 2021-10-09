@@ -1,32 +1,36 @@
-import React, { FC } from 'react'
+import React from 'react'
+import { Route } from 'react-router-dom'
 import { Header, Footer } from '../UI'
-import { UserWrapperStyled } from './styled'
-import Dashboard from './Dashboard'
-import Profile from './Profile'
-import Logout from './Logout'
-import { HashRouter as Router, Switch, Route } from "react-router-dom"
-import { headerData } from './headerData'
+import { UserStyled } from './UserStyled'
+import { Dashboard } from './Dashboard'
+import { Profile } from './Profile'
+import { checkAuthUser } from '../../common/services/common/checkAuth'
+import { GetUser } from '../../common/services/rest/getUser'
+import { headerData } from '../../common/headerData/headerDataUser'
 
-const User: FC = () => {
+
+export const User = () => {
+
+  checkAuthUser()
+
+  GetUser()
+
   return (
-    <Router>
-      <Header {...headerData} />
-      <UserWrapperStyled>
-        <Switch>
-          <Route exact path="/user">
-            <Dashboard />
-          </Route>
-          <Route path="/user/profile">
-            <Profile />
-          </Route>
-          <Route path="/user/logout">
-            <Logout />
-          </Route>
-        </Switch>
-      </UserWrapperStyled>
+    <>
+
+      <Header {...headerData()} />
+
+      <UserStyled>
+
+        <Route path="/user/:id/dashboard" component={Dashboard} />
+
+        <Route path="/user/:id/profile" component={Profile} />
+
+      </UserStyled>
+
       <Footer />
-    </Router>
+
+    </>
   )
 }
 
-export default User

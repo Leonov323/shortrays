@@ -4,18 +4,19 @@ import Link from './Link'
 import { NavProps } from './types'
 import { Sling as Hamburger } from 'hamburger-react'
 
-const Nav: FC<NavProps> = ({ links }) => {
+const Nav: FC<NavProps> = (props) => {
   const [isOpen, setOpen] = useState(false)
-  const autoClose = () =>{
+  const autoClose = () => {
     setOpen(false)
   }
   return (
     <>
       <NavStyled isOpen={isOpen} onClick={autoClose}>
-        {links.map(({ link, text }, index) => {
-          return <Link link={link} text={text} key={index}
-          />
-        })}
+        {props.links.map(({ link, text, exact, onClick }, index,) => {
+          return <Link link={link} text={text} key={index} exact={exact}
+          onClick={onClick}
+          />  
+        })} 
       </NavStyled>
       <Hamburger toggled={isOpen} toggle={setOpen} />
     </>

@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { ContactsStyled } from './styled'
 
-const Contacts: FC = () => {
+export const Contacts = () => {
+  
   return (
     <ContactsStyled>
       CONTACTS
     </ContactsStyled>
   )
-}
 
-export default Contacts
+}

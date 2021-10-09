@@ -4,5 +4,6 @@
 export type LinkProps = {
   link: string
   text: string
-  onClick?: Event
+  exact?: boolean
+  onClick?: any
 }

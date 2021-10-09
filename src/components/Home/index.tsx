@@ -1,36 +1,42 @@
-import React, { FC } from 'react'
+import React from 'react'
+import { Route } from 'react-router-dom'
 import { Header, Footer } from '../UI'
-import { HomeWrapperStyled } from './styled'
-import Primary from './Primary'
-import Service from './Service'
-import Contacts from './Contacts'
-import Login from './Login'
-import { HashRouter as Router, Switch, Route } from "react-router-dom"
-import { headerData } from './headerData'
+import { HomeStyled } from './HomeStyled'
+import { Primary } from './Primary'
+import { Service } from './Service'
+import { Contacts } from './Contacts'
+import { Login } from './Login'
+import { headerData } from '../../common/headerData/headerDataHome'
+import { RedirectService } from '../../common/services/rest/redirectService'
 
-const Home: FC = () => {
+
+export const Home = () => {
+
   return (
-    <Router>
+
+    <>
+
       <Header {...headerData} />
-      <HomeWrapperStyled>
-        <Switch>
-          <Route exact path="/">
-            <Primary />
-          </Route>
-          <Route path="/service">
-            <Service />
-          </Route>
-          <Route path="/contact-us">
-            <Contacts />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-        </Switch>
-      </HomeWrapperStyled>
+
+      <HomeStyled>
+
+        <Route exact path="/" component={Primary} />
+
+        <Route path="/service" component={Service} />
+
+        <Route path="/contact-us" component={Contacts} />
+
+        <Route path="/login" component={Login} />
+
+        <Route path="/redirect" component={RedirectService} />
+
+      </HomeStyled>
+
       <Footer />
-    </Router>
+
+    </>
+    
   )
+
 }
 
-export default Home
