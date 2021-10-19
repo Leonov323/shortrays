@@ -2,7 +2,7 @@ import React from 'react'
 import { GlobalStyles } from './Global'
 import { Home } from './components/Home'
 import { User } from './components/User'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 const App = () => {
